@@ -134,8 +134,8 @@ GameObject:
   - component: {fileID: 203690319}
   - component: {fileID: 203690321}
   - component: {fileID: 203690320}
-  - component: {fileID: 203690322}
   - component: {fileID: 203690323}
+  - component: {fileID: 203690322}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -151,7 +151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203690318}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1569741344}
@@ -460,7 +460,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -4.4987884}
+  m_Offset: {x: 0, y: -4.4963975}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -471,7 +471,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18, y: 1.0024235}
+  m_Size: {x: 18, y: 1.0072048}
   m_EdgeRadius: 0
 --- !u!50 &203690323
 Rigidbody2D:
@@ -505,7 +505,7 @@ GameObject:
   - component: {fileID: 266269451}
   - component: {fileID: 266269452}
   m_Layer: 0
-  m_Name: Hexagon Flat-Top (1)
+  m_Name: Torre2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -518,12 +518,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266269450}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: -0.52, z: 10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.806722, y: 0.81381345, z: 10}
   m_LocalScale: {x: 1.9529, y: 7.975835, z: 1}
   m_Children: []
-  m_Father: {fileID: 862829774}
-  m_RootOrder: 3
+  m_Father: {fileID: 1374957623}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &266269452
 SpriteRenderer:
@@ -603,12 +603,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269087691}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: -3.41, z: 10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.806722, y: -2.0761867, z: 10}
   m_LocalScale: {x: 0.4876, y: 0.4876, z: 0.4876}
   m_Children: []
-  m_Father: {fileID: 862829774}
-  m_RootOrder: 1
+  m_Father: {fileID: 1374957623}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &269087693
 SpriteRenderer:
@@ -721,7 +721,7 @@ GameObject:
   - component: {fileID: 794361294}
   - component: {fileID: 794361295}
   m_Layer: 0
-  m_Name: Hexagon Flat-Top
+  m_Name: Torre1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -734,12 +734,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 794361293}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.0205, y: -0.4897, z: 10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.213778, y: 0.84411347, z: 10}
   m_LocalScale: {x: 1.9529, y: 7.975835, z: 1}
   m_Children: []
-  m_Father: {fileID: 862829774}
-  m_RootOrder: 2
+  m_Father: {fileID: 1374957623}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &794361295
 SpriteRenderer:
@@ -845,7 +845,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10.008576
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -869,15 +869,45 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862829771}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1465094130}
-  - {fileID: 269087692}
-  - {fileID: 794361294}
-  - {fileID: 266269451}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1374957622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1374957623}
+  m_Layer: 0
+  m_Name: Elementos_Juego
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1374957623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374957622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.806722, y: -1.3338134, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 794361294}
+  - {fileID: 1465094130}
+  - {fileID: 266269451}
+  - {fileID: 269087692}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1465094129
 GameObject:
@@ -906,12 +936,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1465094129}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: -3.41, z: 10}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.193278, y: -2.0761867, z: 10}
   m_LocalScale: {x: 0.4876, y: 0.4876, z: 0.4876}
   m_Children: []
-  m_Father: {fileID: 862829774}
-  m_RootOrder: 0
+  m_Father: {fileID: 1374957623}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1465094131
 SpriteRenderer:
@@ -1055,5 +1085,5 @@ Transform:
   m_Children:
   - {fileID: 203690319}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
