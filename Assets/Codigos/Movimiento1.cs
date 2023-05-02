@@ -20,14 +20,15 @@ public class Movimiento1 : MonoBehaviour
     {
         
         
-
+        //Movimiento de la Capsule
         transform.Translate(-1/100f,0,0);
 
     }
 
+    //Comprobación de contacto físico entre Capsules
     void OnCollisionEnter2D(Collision2D otroObjeto) {
         if ( otroObjeto.gameObject.name == "Capsule2") {
-        Debug.Log( "Me ha Besado" );
+        Debug.Log( "Me ha Besado [Capsule 1]<3" );
         }
 
     }
