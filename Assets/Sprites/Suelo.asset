@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Suelo
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 21300000, guid: 0a62361be0952ed4bb2bc2148050481f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.71495414, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0

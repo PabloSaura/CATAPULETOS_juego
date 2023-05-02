@@ -15,8 +15,10 @@ public class Movimiento2 : MonoBehaviour
     void Update()
     {
         
+        if (MainScript.Besito != true) {
         //Movimiento de la Capsule
-        transform.Translate(1/100f,0,0) ;
+        transform.Translate(1/300f,0,0) ;
+        }
     }
 
 //Comprobación de contacto físico entre Capsules

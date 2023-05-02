@@ -3,16 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Movimiento1 : MonoBehaviour
-
-
-
-
-
 {
+    GameObject miObjeto;
     // Start is called before the first frame update
     void Start()
     {
-        
+        miObjeto = GameObject.Find("MainObject");
     }
 
     // Update is called once per frame
@@ -20,15 +16,23 @@ public class Movimiento1 : MonoBehaviour
     {
         
         
-        //Movimiento de la Capsule
-        transform.Translate(-1/100f,0,0);
+
+
+        if (MainScript.Besito != true) {
+        Debug.Log( "avan" );
+                //Movimiento de la Capsule
+          transform.Translate(-1/300f,0,0);
+        }
+
+
 
     }
 
     //Comprobación de contacto físico entre Capsules
     void OnCollisionEnter2D(Collision2D otroObjeto) {
         if ( otroObjeto.gameObject.name == "Capsule2") {
-        Debug.Log( "Me ha Besado [Capsule 1]<3" );
+        MainScript.Besito = true;
+        Debug.Log( "Me ha Besado [Capsule 1] <3" );
         }
 
     }
