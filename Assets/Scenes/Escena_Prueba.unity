@@ -1070,7 +1070,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1374957623}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &269087693
 SpriteRenderer:
@@ -1183,7 +1183,7 @@ GameObject:
   - component: {fileID: 419566037}
   - component: {fileID: 419566038}
   m_Layer: 0
-  m_Name: Torre1 (1)
+  m_Name: Torre2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1201,7 +1201,7 @@ Transform:
   m_LocalScale: {x: 3.6952775, y: 18.043, z: 1}
   m_Children: []
   m_Father: {fileID: 1374957623}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &419566038
 SpriteRenderer:
@@ -1492,8 +1492,8 @@ Transform:
   - {fileID: 594110611}
   - {fileID: 794361294}
   - {fileID: 1465094130}
-  - {fileID: 269087692}
   - {fileID: 419566037}
+  - {fileID: 269087692}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
