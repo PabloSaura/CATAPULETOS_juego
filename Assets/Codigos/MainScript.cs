@@ -17,13 +17,8 @@ public class MainScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Comprobación de evento cuando Capsules contactan
 
-        
-
-
-
-
+        //Aquí todavía no hay nada
 
     }
 
