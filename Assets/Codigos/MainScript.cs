@@ -31,7 +31,7 @@ public class MainScript : MonoBehaviour
     void Update()
     {
 
-        //Aquí todavía no hay nada
+        //Hay que hacer que los personajes pausen un momento y aparezca el mensaje "SE HAN BESADO!!!" Creado en un ScriptCanvas
 
     }
 
