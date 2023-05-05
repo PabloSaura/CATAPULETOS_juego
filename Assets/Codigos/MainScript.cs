@@ -11,10 +11,13 @@ public class MainScript : MonoBehaviour
     public static int Puntuación = 0;
 
     //Rondas
-    public static int Ronda = 6;
+    public static int Ronda = 3;
 
     //Vida Capsules
     public static int Vida_Capsules = 5;
+
+    public GameObject cap1;
+    public GameObject cap2;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +32,11 @@ public class MainScript : MonoBehaviour
 
         Debug.Log(Ronda);
 
+    }
+
+    public void IniciaPosiciones(){
+        cap1.transform.position = new Vector2(-14,-6);
+        cap2.transform.position = new Vector2(14,-6);
     }
 
     
