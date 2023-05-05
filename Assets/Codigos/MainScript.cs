@@ -35,8 +35,8 @@ public class MainScript : MonoBehaviour
     }
 
     public void IniciaPosiciones(){
-        cap1.transform.position = new Vector2(-14,-6);
-        cap2.transform.position = new Vector2(14,-6);
+        cap1.transform.position = new Vector2(16.5f,-6.5f);
+        cap2.transform.position = new Vector2(-16.5f,-6.5f);
     }
 
     
