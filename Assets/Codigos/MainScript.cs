@@ -30,7 +30,7 @@ public class MainScript : MonoBehaviour
     void Update()
     {
 
-        Debug.Log(Ronda);
+        //Aquí todavía no hay nada
 
     }
 
