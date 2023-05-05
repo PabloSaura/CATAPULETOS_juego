@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Rondas : MonoBehaviour
 {
-    
+
+
+
+
    // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +17,19 @@ public class Rondas : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (MainScript.Besito == true && gameObject.name == "Capsule1") {
+            //Debug.Log( "avan1" );
+            //Movimiento de la Capsule1
+            transform.position = new Vector3(12,-5,10);
+        }
+
+
+        if (MainScript.Besito == true && gameObject.name == "Capsule2") {
+            //Debug.Log( "avan2" );
+            //Movimiento de la Capsule2
+            transform.position = new Vector3(-16,-5,10);
+        }
 
     }
 
@@ -26,12 +42,15 @@ public class Rondas : MonoBehaviour
             }
         }
         */
-     void OnCollisionEnter2D(Collision2D otroObjeto){
+    
+    /*
+    void OnCollisionEnter2D(Collision2D otroObjeto){
         if (MainScript.Besito == true) {
             MainScript.Ronda --;
             Debug.Log( "Cambio de Ronda" );
         }
     }
+    */
     
     
 }
