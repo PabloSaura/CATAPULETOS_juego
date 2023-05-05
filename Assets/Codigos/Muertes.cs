@@ -18,7 +18,7 @@ public class Muertes : MonoBehaviour
 
     void OnTriggerEnter2D(){
         //Debug.Log("Besitoooooo");
-        MainScript.Vida_Capsule1--;
-        MainScript.Vida_Capsule2--;
+        //MainScript.Vida_Capsule1--;
+        //MainScript.Vida_Capsule2--;
     }
 }
