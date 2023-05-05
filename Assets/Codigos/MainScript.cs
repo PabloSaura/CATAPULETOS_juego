@@ -14,7 +14,7 @@ public class MainScript : MonoBehaviour
     public static int Ronda = 3;
 
     //Vida Capsules
-    public static int Vida_Capsules = 5;
+    public static int Vida_Capsules = 3; /// lo he cambiado de 5 --> 3
 
     public GameObject cap1;
     public GameObject cap2;
