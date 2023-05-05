@@ -10,15 +10,11 @@ public class MainScript : MonoBehaviour
     //Puntuación
     public static int Puntuación = 0;
 
-    //Puntuación
-    public static int Ronda = 3;
+    //Rondas
+    public static int Ronda = 6;
 
-    //Vida Capsule1
-    public static int Vida_Capsule1 = 5;
-
-    //Vida Capsule2
-    public static int Vida_Capsule2 = 5;
-
+    //Vida Capsules
+    public static int Vida_Capsules = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +27,7 @@ public class MainScript : MonoBehaviour
     void Update()
     {
 
-        //Aquí todavía no hay nada
+        Debug.Log(Ronda);
 
     }
 

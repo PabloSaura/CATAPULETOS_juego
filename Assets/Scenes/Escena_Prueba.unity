@@ -1051,6 +1051,9 @@ GameObject:
   - component: {fileID: 269087694}
   - component: {fileID: 269087695}
   - component: {fileID: 269087697}
+  - component: {fileID: 269087699}
+  - component: {fileID: 269087698}
+  - component: {fileID: 269087696}
   m_Layer: 0
   m_Name: Capsule2
   m_TagString: Untagged
@@ -1160,6 +1163,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &269087696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269087691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead4403c55a973746a13da6bb09259f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personaje1: {fileID: 1465094129}
+  personaje2: {fileID: 269087691}
 --- !u!114 &269087697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1170,6 +1187,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83ff4582b202d8c42878e2217afd826a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &269087698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269087691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 672291c62eb74b545ac0cfb649f6aab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &269087699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269087691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 298cf2ea52f0e1f42b4e05f9717c51a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &419566036
@@ -1510,6 +1551,9 @@ GameObject:
   - component: {fileID: 1465094132}
   - component: {fileID: 1465094133}
   - component: {fileID: 1465094135}
+  - component: {fileID: 1465094137}
+  - component: {fileID: 1465094136}
+  - component: {fileID: 1465094134}
   m_Layer: 0
   m_Name: Capsule1
   m_TagString: Untagged
@@ -1619,6 +1663,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1465094134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465094129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead4403c55a973746a13da6bb09259f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personaje1: {fileID: 1465094129}
+  personaje2: {fileID: 269087691}
 --- !u!114 &1465094135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1629,6 +1687,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83ff4582b202d8c42878e2217afd826a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1465094136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465094129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 672291c62eb74b545ac0cfb649f6aab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1465094137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465094129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 298cf2ea52f0e1f42b4e05f9717c51a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1569741342

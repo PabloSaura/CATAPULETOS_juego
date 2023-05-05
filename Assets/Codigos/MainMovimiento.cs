@@ -34,9 +34,9 @@ public class MainMovimiento : MonoBehaviour
 
     //Comprobación de contacto físico entre Capsules
     void OnCollisionEnter2D(Collision2D otroObjeto) {
-        if ( otroObjeto.gameObject.name == "Capsule2" || otroObjeto.gameObject.name == "Capsule1") {
+        if ( otroObjeto.gameObject.name == "Capsule2" || otroObjeto.gameObject.name == "Capsule1" ) {
             MainScript.Besito = true;
-            Debug.Log( "Nos hemos Besado <3" );
-        }
-    }
+            Debug.Log( "Nos hemos Besado <3" ); 
+        } 
+    } 
 }
