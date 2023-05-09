@@ -25,14 +25,14 @@ public class MainMovimiento : MonoBehaviour
         if (MainScript.Besito != true && gameObject.name == "Capsule1") {
             //Debug.Log( "avan1" );
             //Movimiento de la Capsule1
-            transform.Translate(-1/300f,0,0);
+            transform.Translate(-1/400f,0,0);
         }
 
 
         if (MainScript.Besito != true && gameObject.name == "Capsule2") {
             //Debug.Log( "avan2" );
             //Movimiento de la Capsule2
-            transform.Translate(1/300f,0,0) ;
+            transform.Translate(1/400f,0,0) ;
         }
 
     }
