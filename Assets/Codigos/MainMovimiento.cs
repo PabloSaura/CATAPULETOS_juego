@@ -19,21 +19,29 @@ public class MainMovimiento : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+         if (MainScript.Ronda != 0) {
+            
+        
+            //Debug.Log (gameObject.name);
 
-        //Debug.Log (gameObject.name);
+            //Movimiento de Capsule 1 hacia Capsule 2
+            if (MainScript.Besito != true && gameObject.name == "Capsule1") {
+                //Debug.Log( "avan1" );
+                //Movimiento de la Capsule1
+                transform.Translate(-1/400f,0,0);
+            } else if (MainScript.Besito == true && gameObject.name == "Capsule1") {
+                transform.Translate(-1/400f,0,0);
+            }
 
-        if (MainScript.Besito != true && gameObject.name == "Capsule1") {
-            //Debug.Log( "avan1" );
-            //Movimiento de la Capsule1
-            transform.Translate(-1/400f,0,0);
-        }
-
-
-        if (MainScript.Besito != true && gameObject.name == "Capsule2") {
-            //Debug.Log( "avan2" );
-            //Movimiento de la Capsule2
-            transform.Translate(1/400f,0,0) ;
-        }
+            //Movimiento de Capsule 2 hacia Capsule 1
+            if (MainScript.Besito != true && gameObject.name == "Capsule2") {
+                //Debug.Log( "avan2" );
+                //Movimiento de la Capsule2
+                transform.Translate(1/400f,0,0) ;
+            } else if (MainScript.Besito == true && gameObject.name == "Capsule2") {
+                transform.Translate(1/400f,0,0);
+            }
+        }//Cuando las Rondas llegan a 0 Se apagó el juego
 
     }
 
@@ -47,12 +55,7 @@ public class MainMovimiento : MonoBehaviour
             Debug.Log( "Cambio de Ronda" );
 
             mainScript.IniciaPosiciones();
-
-
-
-
-
-
         } 
+
     } 
 }

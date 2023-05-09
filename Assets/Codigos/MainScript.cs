@@ -31,12 +31,13 @@ public class MainScript : MonoBehaviour
     {
 
         //Aquí todavía no hay nada
+        Debug.Log (Ronda);
 
     }
 
     public void IniciaPosiciones(){
-        cap1.transform.position = new Vector2(11,-7);
-        cap2.transform.position = new Vector2(-11,-7);
+        cap1.transform.position = new Vector2(10.5f,-6);
+        cap2.transform.position = new Vector2(-10.5f,-6);
     }
 
     
