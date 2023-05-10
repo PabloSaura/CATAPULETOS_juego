@@ -33,6 +33,6 @@ public class Arma_Arco : MonoBehaviour
     //Averiguar botones de Mando
      void OnGUI(){
         Event eventoBoton = Event.current;
-        Debug.Log ( "Juego con Mandito" + eventoBoton);
+        Debug.Log ( "Juego con Mandito" + eventoBoton.button);
     }
 }
