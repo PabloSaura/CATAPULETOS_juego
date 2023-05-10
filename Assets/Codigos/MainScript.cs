@@ -16,6 +16,7 @@ public class MainScript : MonoBehaviour
     //Vida Capsules
     public static int Vida_Capsules = 3; /// lo he cambiado de 5 --> 3
 
+    //Capsules
     public GameObject cap1;
     public GameObject cap2;
 
