@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class MainMovimiento : MonoBehaviour
 {
-    
+    //public GameObject gestorSonido;
+
+    //public GameObject Capsule1;
+    //public GameObject Capsule2;
+
     GameObject mainObject;
     
     MainScript mainScript;
@@ -29,6 +33,7 @@ public class MainMovimiento : MonoBehaviour
                 //Debug.Log( "avan1" );
                 //Movimiento de la Capsule1
                 transform.Translate(-1/400f,0,0);
+                
             } else if (MainScript.Besito == true && gameObject.name == "Capsule1") {
                 transform.Translate(-1/400f,0,0);
             }
@@ -50,6 +55,11 @@ public class MainMovimiento : MonoBehaviour
         if ( otroObjeto.gameObject.name == "Capsule2" ) {//|| otroObjeto.gameObject.name == "Capsule1" ) {
             MainScript.Besito = true;
             Debug.Log( "Nos hemos Besado <3" ); 
+/*
+            //Sonido beso
+            gestorSonido.GetComponent<audioManager>().sonidoBesito();
+            //gestorSonido.GetComponent<AudioSource>().PlayOneShot(gestorSonido.GetComponent<audioManager>().sonidoBeso, 1f);
+*/
 
             MainScript.Ronda --;
             Debug.Log( "Cambio de Ronda" );
@@ -57,5 +67,32 @@ public class MainMovimiento : MonoBehaviour
             mainScript.IniciaPosiciones();
         } 
 
-    } 
-}
+    } //Colision Capsules
+
+//Intento de hacer que reaparezcan las Capsules cuando llegan a un sito concreto fuera de cámara
+    void OnTriggerEnter (Collider otroObjeto) {
+        if ( otroObjeto.gameObject.name == "Capsule1"){
+        mainScript.IniciaPosicion1();
+    }
+    
+/*
+    void OnTriggerEnter (Collider otroObjeto) {
+        if (otroObjeto.gameObject.name == "Capsule2") {
+        mainScript.IniciaPosicion2();
+        }
+*/
+    }
+        
+   
+
+/*
+    void OnTriggerEnter (Collider otroObjeto) {
+        if ( otroObjeto.gameObject.name == "Capsule1"){
+        transform.position = new Vector2(21,-6.1f);
+        } else if (otroObjeto.gameObject.name == "Capsule2") {
+        transform.position = new Vector2(-21,-6.1f);
+        }
+    }
+*/
+    }
+

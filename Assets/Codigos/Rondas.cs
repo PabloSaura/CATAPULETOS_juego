@@ -35,6 +35,7 @@ public class Rondas : MonoBehaviour
 
         if (MainScript.Ronda == 0) {
             Debug.Log ("Fin de Partida");
+            
         }
     
     }
