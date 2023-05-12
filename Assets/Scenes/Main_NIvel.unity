@@ -210,7 +210,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &58319103
@@ -314,7 +314,7 @@ SpriteRenderer:
   m_Size: {x: 0.59375, y: 0.8671875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &86216834
@@ -1606,8 +1606,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232090527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 0.92, z: 0}
-  m_LocalScale: {x: 0.23918127, y: 0.23918127, z: 0.23918127}
+  m_LocalPosition: {x: 0, y: 0.77, z: 0}
+  m_LocalScale: {x: 0.2506528, y: 0.23918127, z: 0.23918127}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -1699,7 +1699,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &246450965
@@ -1901,6 +1901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 317887045}
   - component: {fileID: 317887046}
+  - component: {fileID: 317887047}
   m_Layer: 0
   m_Name: Arco_1
   m_TagString: Untagged
@@ -1973,6 +1974,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &317887047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317887044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc09713309fce4940aa3b2313a001de7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &594110610
 GameObject:
   m_ObjectHideFlags: 0
@@ -2449,7 +2462,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &904343079
@@ -2476,6 +2489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 918290788}
   - component: {fileID: 918290789}
+  - component: {fileID: 918290790}
   m_Layer: 0
   m_Name: Ballista_1
   m_TagString: Untagged
@@ -2548,6 +2562,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &918290790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918290787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e60747f3d9a8b94783d92e56b62e009, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &948759404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2558,6 +2584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 948759405}
   - component: {fileID: 948759406}
+  - component: {fileID: 948759407}
   m_Layer: 0
   m_Name: Catapulta_1
   m_TagString: Untagged
@@ -2630,6 +2657,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &948759407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948759404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef074beca7c8d2f4e84a22dd82ba27e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &999285361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2717,7 +2756,7 @@ SpriteRenderer:
   m_Size: {x: 0.59375, y: 0.8671875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &999285364
