@@ -20,6 +20,10 @@ public class MainScript : MonoBehaviour
     public GameObject cap1;
     public GameObject cap2;
 
+    void Awake(){
+        DontDestroyOnLoad(gameObject); ///ESTO ES PARA QUE NO SE DESTRUYA (video23 GUI Moises)
+    }
+
     // Start is called before the first frame update
     void Start()
     {
