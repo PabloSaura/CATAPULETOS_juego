@@ -79,10 +79,12 @@ public class MainMovimiento : MonoBehaviour
         mainScript.IniciaPosicion1();
     }
     
+/*
     void OnTriggerEnter (Collider otroObjeto) {
         if (otroObjeto.gameObject.name == "Capsule2") {
         mainScript.IniciaPosicion2();
         }
+*/
     }
         
    
@@ -97,4 +99,4 @@ public class MainMovimiento : MonoBehaviour
     }
 */
     }
-}
+

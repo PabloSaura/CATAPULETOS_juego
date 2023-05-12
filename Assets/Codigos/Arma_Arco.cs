@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Arma_Arco : MonoBehaviour
 {
@@ -31,8 +32,24 @@ public class Arma_Arco : MonoBehaviour
     }
 
     //Averiguar botones de Mando
-     void OnGUI(){
+/*     void OnGUI(){
         Event eventoBoton = Event.current;
         Debug.Log ( "Juego con Mandito" + eventoBoton.button);
+    }
+*/
+
+    void FixedUpdate()
+    {
+        var gamepad = Gamepad.current;
+        if (gamepad == null)
+            return; // No gamepad connected.
+
+        if (gamepad.rightTrigger.wasPressedThisFrame)
+        {
+            // 'Use' code here
+        }
+
+        Vector2 move = gamepad.leftStick.ReadValue();
+        // 'Move' code here
     }
 }
