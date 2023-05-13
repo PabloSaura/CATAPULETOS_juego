@@ -19,7 +19,6 @@ public class StartScript : MonoBehaviour
 
     public void EntrarJuego(){
         SceneManager.LoadScene("Main_Nivel");
-        
     }
     public void EleccionPersonajes(){
     SceneManager.LoadScene("Eleccion_Personajes");
