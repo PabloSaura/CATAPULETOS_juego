@@ -39,8 +39,8 @@ public class MainMovimiento : MonoBehaviour
             if (MainScript.Besito == false && gameObject.name == "Capsule1") {
                 //Debug.Log( "avan1" );
                 //Movimiento de la Capsule1
-                transform.Translate(-1/MainScript.velocidadCapsulas,0,0);
-                //Debug.Log("") + Time.deltaTime + ("");
+                transform.Translate(-1/MainScript.velocidadCapsulas * Time.deltaTime,0,0);
+                //Debug.Log("" + Time.deltaTime + "");
                 
 
              
@@ -53,8 +53,8 @@ public class MainMovimiento : MonoBehaviour
             if (MainScript.Besito == false && gameObject.name == "Capsule2") {
                 //Debug.Log( "avan2" );
                 //Movimiento de la Capsule2
-                transform.Translate(1/MainScript.velocidadCapsulas,0,0);
-                //Debug.Log("") + Time.deltaTime + ("");
+                transform.Translate(1/MainScript.velocidadCapsulas * Time.deltaTime,0,0);
+                //Debug.Log("" + Time.deltaTime + "");
                 
             }
                 /*

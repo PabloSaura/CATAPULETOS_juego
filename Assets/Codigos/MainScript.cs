@@ -21,7 +21,7 @@ public class MainScript : MonoBehaviour
     public GameObject cap1;
     public GameObject cap2;
 
-    public static float velocidadCapsulas = 10f;
+    public static float velocidadCapsulas = 5f;
 
     void Awake(){
         DontDestroyOnLoad(gameObject); ///ESTO ES PARA QUE NO SE DESTRUYA (video23 GUI Moises)
