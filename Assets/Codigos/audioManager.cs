@@ -6,6 +6,9 @@ public class audioManager : MonoBehaviour
 {
 
     public AudioClip sonidoBeso;
+    public AudioClip sonidoDisparo;
+    public AudioClip sonidoImpacto;
+
 
     // Start is called before the first frame update
     void Start()
