@@ -32,26 +32,36 @@ public class MainMovimiento : MonoBehaviour
          if (MainScript.Ronda != 0) {
             
         
-            //Debug.Log (gameObject.name);
+            Debug.Log (MainScript.Besito);
+           
 
             //Movimiento de Capsule 1 hacia Capsule 2
-            if (MainScript.Besito != true && gameObject.name == "Capsule1") {
+            if (MainScript.Besito == false && gameObject.name == "Capsule1") {
                 //Debug.Log( "avan1" );
                 //Movimiento de la Capsule1
-                transform.Translate(-1/400f,0,0);
+                transform.Translate(-1/MainScript.velocidadCapsulas,0,0);
+                //Debug.Log("") + Time.deltaTime + ("");
                 
-            } else if (MainScript.Besito == true && gameObject.name == "Capsule1") {
+
+             
+            }/* else if (MainScript.Besito == true && gameObject.name == "Capsule1") {
                 transform.Translate(-1/400f,0,0);
             }
+            */
 
             //Movimiento de Capsule 2 hacia Capsule 1
-            if (MainScript.Besito != true && gameObject.name == "Capsule2") {
+            if (MainScript.Besito == false && gameObject.name == "Capsule2") {
                 //Debug.Log( "avan2" );
                 //Movimiento de la Capsule2
-                transform.Translate(1/400f,0,0) ;
+                transform.Translate(1/MainScript.velocidadCapsulas,0,0);
+                //Debug.Log("") + Time.deltaTime + ("");
+                
+            }
+                /*
             } else if (MainScript.Besito == true && gameObject.name == "Capsule2") {
                 transform.Translate(1/400f,0,0);
             }
+            */
         }//Cuando las Rondas llegan a 0 Se apagó el juego
 
     }
@@ -70,17 +80,18 @@ public class MainMovimiento : MonoBehaviour
             MainScript.Ronda --;
             Debug.Log( "Cambio de Ronda" );
 
-            mainScript.IniciaPosiciones();
+            //mainScript.IniciaPosiciones();
         } 
 
     } //Colision Capsules
 
 //Intento de hacer que reaparezcan las Capsules cuando llegan a un sito concreto fuera de cámara
+/*
     void OnTriggerEnter (Collider otroObjeto) {
         if ( otroObjeto.gameObject.name == "Capsule1"){
-        mainScript.IniciaPosicion1();
+        //mainScript.IniciaPosicion1();
     }
-    
+    */
 /*
     void OnTriggerEnter (Collider otroObjeto) {
         if (otroObjeto.gameObject.name == "Capsule2") {
@@ -100,5 +111,5 @@ public class MainMovimiento : MonoBehaviour
         }
     }
 */
-    }
+
 

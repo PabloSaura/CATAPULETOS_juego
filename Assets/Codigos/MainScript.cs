@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MainScript : MonoBehaviour
+
 {
     //Booleano de Comprobación de evento cuando Capsules contactan
     public static bool Besito = false;
@@ -19,6 +20,8 @@ public class MainScript : MonoBehaviour
     //Capsules
     public GameObject cap1;
     public GameObject cap2;
+
+    public static float velocidadCapsulas = 10f;
 
     void Awake(){
         DontDestroyOnLoad(gameObject); ///ESTO ES PARA QUE NO SE DESTRUYA (video23 GUI Moises)
@@ -41,10 +44,11 @@ public class MainScript : MonoBehaviour
     }
 
     public void IniciaPosiciones(){
-        cap1.transform.position = new Vector2(10.5f,-6);
-        cap2.transform.position = new Vector2(-10.5f,-6);
+        cap1.transform.position = new Vector2(10.5f,-5);
+        cap2.transform.position = new Vector2(-10.5f,-5);
+        Besito = false;
     }
-
+/*
     public void IniciaPosicion1(){
         cap1.transform.position = new Vector2(21,-6.1f); 
     }
@@ -52,7 +56,7 @@ public class MainScript : MonoBehaviour
     public void IniciaPosicion2(){
         cap2.transform.position = new Vector2(-21,-6.1f);
     }
-
+*/
     
 
 }

@@ -19,11 +19,19 @@ public class Rondas : MonoBehaviour
     void Update()
     {
 
+        if (MainScript.Besito == true){
+             mainScript.IniciaPosiciones();
+        }
+
+/*
+
+
         //Al Cambiar la Ronda, Capsule 1 vuelve a su sitio inicial
         if (MainScript.Besito == true && gameObject.name == "Capsule1") {
             //Debug.Log( "avan1" );
             //Movimiento de la Capsule1
             transform.position = new Vector3(12,-5,10);
+            MainScript.Besito = false;
         }
 
         //Al Cambiar la Ronda, Capsule 2 vuelve a su sitio inicial
@@ -31,8 +39,9 @@ public class Rondas : MonoBehaviour
             //Debug.Log( "avan2" );
             //Movimiento de la Capsule2
             transform.position = new Vector3(-16,-5,10);
+            MainScript.Besito = false;
         }
-
+*/
         if (MainScript.Ronda == 0) {
             Debug.Log ("Fin de Partida");
             
