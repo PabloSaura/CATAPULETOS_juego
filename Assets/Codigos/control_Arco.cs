@@ -17,5 +17,6 @@ public class control_Arco : MonoBehaviour
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 Direccion = mousePosition - arco_Posicion;
             transform.right = Direccion;
+            
     }
 }

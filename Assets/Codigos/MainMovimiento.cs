@@ -13,9 +13,11 @@ public class MainMovimiento : MonoBehaviour
     
     MainScript mainScript;
     
+/* 
      void Awake(){
         DontDestroyOnLoad(gameObject); ///ESTO ES PARA QUE NO SE DESTRUYA (video23 GUI Moises)
     }
+*/
 
     // Start is called before the first frame update
     void Start()

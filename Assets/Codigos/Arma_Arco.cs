@@ -44,7 +44,13 @@ public class Arma_Arco : MonoBehaviour
 */
 
     void Disparo () {
-        
+        GameObject nuevaFlecha = Instantiate(flecha, puntoDisparo.position, puntoDisparo.rotation);
+        Debug.Log(puntoDisparo.rotation.z);
+        Debug.Log(puntoDisparo.rotation);
+
+          Vector3 targetForward = puntoDisparo.rotation * Vector3.forward;
+        Vector3 targetUp = puntoDisparo.rotation * Vector3.right;
+        nuevaFlecha.GetComponent<Rigidbody2D>().velocity = targetUp * velocidadFlecha;
     }
 
     void FixedUpdate()
