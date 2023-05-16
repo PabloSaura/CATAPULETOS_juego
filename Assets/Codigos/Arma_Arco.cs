@@ -12,6 +12,7 @@ public class Arma_Arco : MonoBehaviour
     //Proyectil y Velocidad
     public GameObject flecha;
     public float velocidadFlecha = 3.0f;
+    public Transform puntoDisparo;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,10 @@ public class Arma_Arco : MonoBehaviour
             //this.GetComponentInParent<AudioSource>().PlayOneShot(sonidoBola);
             //Instantiate(flecha, new Vector3(transform.position.x,transform.position.y,0), Quaternion.identity);
         }
+        
+        if (Input.GetMouseButtonDown(0)) {
+            Disparo();
+        }
     }
 
     //Averiguar botones de Mando
@@ -37,6 +42,10 @@ public class Arma_Arco : MonoBehaviour
         Debug.Log ( "Juego con Mandito" + eventoBoton.button);
     }
 */
+
+    void Disparo () {
+        
+    }
 
     void FixedUpdate()
     {
