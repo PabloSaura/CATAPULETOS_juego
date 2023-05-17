@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovimientoNubes : MonoBehaviour
 {
-    //public static nubes;
+    //public float nubes;
     //public float velocidadNubes = 10f;
 
     // Start is called before the first frame update
