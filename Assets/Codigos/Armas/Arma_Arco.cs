@@ -53,7 +53,7 @@ public class Arma_Arco : MonoBehaviour
         nuevaFlecha.GetComponent<Rigidbody2D>().velocity = targetUp * velocidadFlecha;
     }
 
-    void FixedUpdate()
+ /*   void FixedUpdate()
     {
         var gamepad = Gamepad.current;
         if (gamepad == null)
@@ -67,4 +67,5 @@ public class Arma_Arco : MonoBehaviour
         Vector2 move = gamepad.leftStick.ReadValue();
         // 'Move' code here
     }
+*/
 }
