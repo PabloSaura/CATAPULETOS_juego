@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: fondo
+    uniqueID: 3224716421
+    locked: 0
+  - name: nubes
+    uniqueID: 2147643391
+    locked: 0
+  - name: botones
+    uniqueID: 2433870155
+    locked: 0
