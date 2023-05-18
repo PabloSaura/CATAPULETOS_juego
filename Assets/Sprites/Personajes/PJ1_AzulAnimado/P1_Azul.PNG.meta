@@ -1,7 +1,46 @@
 fileFormatVersion: 2
 guid: a96b8aad0aca88749b9ab2b0a2134d02
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7420440829455060030
+    second: P1_Azul_0
+  - first:
+      213: 454585014509532288
+    second: P1_Azul_1
+  - first:
+      213: 2393819633968341650
+    second: P1_Azul_2
+  - first:
+      213: -4503393224742780372
+    second: P1_Azul_3
+  - first:
+      213: -325895731207171874
+    second: P1_Azul_4
+  - first:
+      213: -6503046456437529639
+    second: P1_Azul_5
+  - first:
+      213: -4447149759812847716
+    second: P1_Azul_6
+  - first:
+      213: -6198042550146432038
+    second: P1_Azul_7
+  - first:
+      213: 4380821654208979874
+    second: P1_Azul_8
+  - first:
+      213: 8572454785194799930
+    second: P1_Azul_9
+  - first:
+      213: 561036418427325609
+    second: P1_Azul_10
+  - first:
+      213: 6606077598441814478
+    second: P1_Azul_11
+  - first:
+      213: -4725742650310906186
+    second: P1_Azul_12
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -41,7 +80,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -90,7 +129,280 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: P1_Azul_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 767
+        width: 152
+        height: 222
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c49748e93baf660800000000000000
+      internalID: 7420440829455060030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_Azul_1
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 767
+        width: 145
+        height: 230
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0847e0689a20f4600800000000000000
+      internalID: 454585014509532288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_Azul_2
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 767
+        width: 245
+        height: 254
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292e90b264e883120800000000000000
+      internalID: 2393819633968341650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_Azul_3
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 767
+        width: 245
+        height: 268
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c224e4bd8bbb081c0800000000000000
+      internalID: -4503393224742780372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_Azul_4
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 767
+        width: 231
+        height: 260
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed094932f8f2a7bf0800000000000000
+      internalID: -325895731207171874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_Azul_5
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 766
+        width: 203
+        height: 242
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3ad26d3b980c5a0800000000000000
+      internalID: -6503046456437529639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_Azul_6
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 412
+        width: 170
+        height: 237
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97346ffadc8842c0800000000000000
+      internalID: -4447149759812847716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_Azul_7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 412
+        width: 157
+        height: 215
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad304c7a3212cf9a0800000000000000
+      internalID: -6198042550146432038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_Azul_8
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 414
+        width: 165
+        height: 250
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3277b751ecbcc30800000000000000
+      internalID: 4380821654208979874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_Azul_9
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 414
+        width: 237
+        height: 254
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3332a4553a77f670800000000000000
+      internalID: 8572454785194799930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_Azul_10
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 414
+        width: 238
+        height: 254
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac0b6a66a339c700800000000000000
+      internalID: 561036418427325609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_Azul_11
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 414
+        width: 231
+        height: 250
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec93ac543908dab50800000000000000
+      internalID: 6606077598441814478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: P1_Azul_12
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 56
+        width: 165
+        height: 246
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be2e4cf81aca6eb0800000000000000
+      internalID: -4725742650310906186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
