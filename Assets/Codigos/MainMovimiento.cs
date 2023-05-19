@@ -36,7 +36,7 @@ public class MainMovimiento : MonoBehaviour
            
 
             //Movimiento de Capsule 1 hacia Capsule 2
-            if (MainScript.Besito == false && gameObject.name == "Capsule1") {
+            if (MainScript.Besito == false && gameObject.name == "P2_Naranja_0") {
                 //Debug.Log( "avan1" );
                 //Movimiento de la Capsule1
                 transform.Translate(-1/MainScript.velocidadCapsulas * Time.deltaTime,0,0);
@@ -50,7 +50,7 @@ public class MainMovimiento : MonoBehaviour
             */
 
             //Movimiento de Capsule 2 hacia Capsule 1
-            if (MainScript.Besito == false && gameObject.name == "P1_Azul_2") {
+            if (MainScript.Besito == false && gameObject.name == "P3_Verde_0") {
                 //Debug.Log( "avan2" );
                 //Movimiento de la Capsule2
                 transform.Translate(1/MainScript.velocidadCapsulas * Time.deltaTime,0,0);
@@ -68,7 +68,7 @@ public class MainMovimiento : MonoBehaviour
 
     //Comprobación de contacto físico entre Capsules
     void OnCollisionEnter2D(Collision2D otroObjeto) {
-        if ( otroObjeto.gameObject.name == "P1_Azul_2" ) {//|| otroObjeto.gameObject.name == "Capsule1" ) {
+        if ( otroObjeto.gameObject.name == "P2_Naranja_0" ) {//|| otroObjeto.gameObject.name == "Capsule1" ) {
             MainScript.Besito = true;
             Debug.Log( "Nos hemos Besado <3" ); 
 /*
