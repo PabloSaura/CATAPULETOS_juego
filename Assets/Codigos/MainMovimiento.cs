@@ -6,20 +6,12 @@ public class MainMovimiento : MonoBehaviour
 {
     //public GameObject gestorSonido;
 
-    //public GameObject Capsule1;
-    //public GameObject Capsule2;
+    public bool EsDeIzquierda = false;
 
     GameObject mainObject;
-    
-    MainScript mainScript;
-    
-/* 
-     void Awake(){
-        DontDestroyOnLoad(gameObject); ///ESTO ES PARA QUE NO SE DESTRUYA (video23 GUI Moises)
-    }
-*/
 
-    // Start is called before the first frame update
+    MainScript mainScript;
+
     void Start()
     {
         mainObject = GameObject.Find("MainObject");
@@ -29,78 +21,55 @@ public class MainMovimiento : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         if (MainScript.Ronda != 0) {
-            
-        
-            Debug.Log (MainScript.Besito);
-           
+        // Si es la última ronda, no se hace nada
+        if (MainScript.Ronda <= 0) return;
 
-            //Movimiento de Capsule 1 hacia Capsule 2
-            if (MainScript.Besito == false && gameObject.name == "P2_Naranja_0") {
-                //Debug.Log( "avan1" );
-                //Movimiento de la Capsule1
-                transform.Translate(-1/MainScript.velocidadCapsulas * Time.deltaTime,0,0);
-                //Debug.Log("" + Time.deltaTime + "");
-                
+        //Debug.Log(MainScript.Besito);
+        transform.Translate(MainScript.velocidadCapsulas * Time.deltaTime * (EsDeIzquierda ? 1 : -1), 0, 0);
 
-             
-            }/* else if (MainScript.Besito == true && gameObject.name == "Capsule1") {
-                transform.Translate(-1/400f,0,0);
-            }
-            */
-
-            //Movimiento de Capsule 2 hacia Capsule 1
-            if (MainScript.Besito == false && gameObject.name == "P3_Verde_0") {
-                //Debug.Log( "avan2" );
-                //Movimiento de la Capsule2
-                transform.Translate(1/MainScript.velocidadCapsulas * Time.deltaTime,0,0);
-                //Debug.Log("" + Time.deltaTime + "");
-                
-            }
-                /*
-            } else if (MainScript.Besito == true && gameObject.name == "Capsule2") {
-                transform.Translate(1/400f,0,0);
-            }
-            */
-        }//Cuando las Rondas llegan a 0 Se apagó el juego
-
+        //Movimiento de Capsule 1 hacia Capsule 2
+        //if (MainScript.Besito == false && gameObject.name.Contains("Capsule"))
+        //{
+        //    //Movimiento de la Capsule1
+        //}
     }
 
     //Comprobación de contacto físico entre Capsules
-    void OnCollisionEnter2D(Collision2D otroObjeto) {
-        if ( otroObjeto.gameObject.name == "P2_Naranja_0" ) {//|| otroObjeto.gameObject.name == "Capsule1" ) {
+    void OnCollisionEnter2D(Collision2D otroObjeto)
+    {
+        if (otroObjeto.gameObject.name.Contains("Capsule1"))
+        {
             MainScript.Besito = true;
-            Debug.Log( "Nos hemos Besado <3" ); 
-/*
-            //Sonido beso
-            gestorSonido.GetComponent<audioManager>().sonidoBesito();
-            //gestorSonido.GetComponent<AudioSource>().PlayOneShot(gestorSonido.GetComponent<audioManager>().sonidoBeso, 1f);
-*/
+            /*
+                        //Sonido beso
+                        gestorSonido.GetComponent<audioManager>().sonidoBesito();
+                        //gestorSonido.GetComponent<AudioSource>().PlayOneShot(gestorSonido.GetComponent<audioManager>().sonidoBeso, 1f);
+            */
 
-            MainScript.Ronda --;
-            Debug.Log( "Cambio de Ronda" );
+            MainScript.Ronda--;
+            Debug.Log("Cambio de Ronda a: " + MainScript.Ronda);
 
             //mainScript.IniciaPosiciones();
-        } 
+        }
 
     } //Colision Capsules
 
-//Intento de hacer que reaparezcan las Capsules cuando llegan a un sito concreto fuera de cámara
-/*
-    void OnTriggerEnter (Collider otroObjeto) {
-        if ( otroObjeto.gameObject.name == "Capsule1"){
-        //mainScript.IniciaPosicion1();
-    }
-    */
-/*
-    void OnTriggerEnter (Collider otroObjeto) {
-        if (otroObjeto.gameObject.name == "Capsule2") {
-        mainScript.IniciaPosicion2();
+    //Intento de hacer que reaparezcan las Capsules cuando llegan a un sito concreto fuera de cámara
+    /*
+        void OnTriggerEnter (Collider otroObjeto) {
+            if ( otroObjeto.gameObject.name == "Capsule1"){
+            //mainScript.IniciaPosicion1();
         }
-*/
-    }
-        
-   
+        */
+    /*
+        void OnTriggerEnter (Collider otroObjeto) {
+            if (otroObjeto.gameObject.name == "Capsule2") {
+            mainScript.IniciaPosicion2();
+            }
+    */
+}
+
+
 
 /*
     void OnTriggerEnter (Collider otroObjeto) {

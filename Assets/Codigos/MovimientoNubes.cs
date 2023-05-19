@@ -10,7 +10,7 @@ public class MovimientoNubes : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -21,6 +21,5 @@ public class MovimientoNubes : MonoBehaviour
         /// HAY QUE AÑADIR LA FUNCION DE RANDOM PARA QUE UNAS VAYAN MÁS RAPIDAS Y OTRAS MÁS LENTAS
 
         // COMANDO PARA EL RESPAWN
-        
     }
 }

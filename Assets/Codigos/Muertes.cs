@@ -16,15 +16,9 @@ public class Muertes : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D otroObjeto){
-        
-        Debug.Log(otroObjeto.gameObject.name);
-        /*
-        if (otroObjeto.gameObject.name == "PuntaFlecha"){
-        MainScript.Vida_Capsules --;
-        
+    void OnTriggerEnter2D(){
+        //Debug.Log("Besitoooooo");
+        //MainScript.Vida_Capsule1--;
         //MainScript.Vida_Capsule2--;
-        }
-        */
     }
 }

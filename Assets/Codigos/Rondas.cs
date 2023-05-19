@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Rondas : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class Rondas : MonoBehaviour
 
     MainScript mainScript;
 
-   // Start is called before the first frame update
+    // Start is called before the first frame update
     void Start()
     {
         mainObject = GameObject.Find("MainObject");
@@ -19,34 +20,39 @@ public class Rondas : MonoBehaviour
     void Update()
     {
 
-        if (MainScript.Besito == true){
-             mainScript.IniciaPosiciones();
+        if (MainScript.Besito == true)
+        {
+            mainScript.IniciaPosiciones();
         }
 
-/*
+        /*
 
 
-        //Al Cambiar la Ronda, Capsule 1 vuelve a su sitio inicial
-        if (MainScript.Besito == true && gameObject.name == "Capsule1") {
-            //Debug.Log( "avan1" );
-            //Movimiento de la Capsule1
-            transform.position = new Vector3(12,-5,10);
-            MainScript.Besito = false;
+                //Al Cambiar la Ronda, Capsule 1 vuelve a su sitio inicial
+                if (MainScript.Besito == true && gameObject.name == "Capsule1") {
+                    //Debug.Log( "avan1" );
+                    //Movimiento de la Capsule1
+                    transform.position = new Vector3(12,-5,10);
+                    MainScript.Besito = false;
+                }
+
+                //Al Cambiar la Ronda, Capsule 2 vuelve a su sitio inicial
+                if (MainScript.Besito == true && gameObject.name == "Capsule2") {
+                    //Debug.Log( "avan2" );
+                    //Movimiento de la Capsule2
+                    transform.position = new Vector3(-16,-5,10);
+                    MainScript.Besito = false;
+                }
+        */
+
+        // AQUÍ VA TODO LO QUE SE QUIERA HACER AL PERDERSE LAS 3 RONDAS
+        if (MainScript.Ronda == 0)
+        {
+            Debug.Log("Fin de Partida");
+            MainScript.Ronda = 3;
+            SceneManager.LoadScene("Start");
         }
 
-        //Al Cambiar la Ronda, Capsule 2 vuelve a su sitio inicial
-        if (MainScript.Besito == true && gameObject.name == "Capsule2") {
-            //Debug.Log( "avan2" );
-            //Movimiento de la Capsule2
-            transform.position = new Vector3(-16,-5,10);
-            MainScript.Besito = false;
-        }
-*/
-        if (MainScript.Ronda == 0) {
-            Debug.Log ("Fin de Partida");
-            
-        }
-    
     }
 
     //Comprobación de contacto físico entre Capsules
@@ -58,7 +64,7 @@ public class Rondas : MonoBehaviour
             }
         }
         */
-    
+
     /*
     void OnCollisionEnter2D(Collision2D otroObjeto){
         if (MainScript.Besito == true) {
@@ -67,6 +73,6 @@ public class Rondas : MonoBehaviour
         }
     }
     */
-    
-    
+
+
 }
