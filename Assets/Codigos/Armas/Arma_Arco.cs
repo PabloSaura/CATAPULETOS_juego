@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class Arma_Arco : MonoBehaviour
 {
+    public bool EsDeIzquierda = false;
     //Armas
     //public GameObject Arco1;
     public GameObject Arco2;
@@ -17,55 +18,58 @@ public class Arma_Arco : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E) == true) {
+        if (Input.GetKeyDown(KeyCode.E) == true)
+        {
             Debug.Log("Pulsé [E]");
             Input.GetAxis("Horizontal");
             Input.GetAxis("Vertical");
             //this.GetComponentInParent<AudioSource>().PlayOneShot(sonidoBola);
             //Instantiate(flecha, new Vector3(transform.position.x,transform.position.y,0), Quaternion.identity);
         }
-        
-        if (Input.GetMouseButtonDown(0)) {
+
+        if (Input.GetMouseButtonDown(0))
+        {
             Disparo();
         }
     }
 
     //Averiguar botones de Mando
-/*     void OnGUI(){
-        Event eventoBoton = Event.current;
-        Debug.Log ( "Juego con Mandito" + eventoBoton.button);
-    }
-*/
+    /*     void OnGUI(){
+            Event eventoBoton = Event.current;
+            Debug.Log ( "Juego con Mandito" + eventoBoton.button);
+        }
+    */
 
-    void Disparo () {
+    void Disparo()
+    {
         GameObject nuevaFlecha = Instantiate(flecha, puntoDisparo.position, puntoDisparo.rotation);
-        Debug.Log(puntoDisparo.rotation.z);
-        Debug.Log(puntoDisparo.rotation);
+        Flecha codigoFlecha = nuevaFlecha.GetComponent<Flecha>();
+        codigoFlecha.EsDeIzquierda = EsDeIzquierda;
 
-          Vector3 targetForward = puntoDisparo.rotation * Vector3.forward;
+        Vector3 targetForward = puntoDisparo.rotation * Vector3.forward;
         Vector3 targetUp = puntoDisparo.rotation * Vector3.right;
         nuevaFlecha.GetComponent<Rigidbody2D>().velocity = targetUp * velocidadFlecha;
     }
 
- /*   void FixedUpdate()
-    {
-        var gamepad = Gamepad.current;
-        if (gamepad == null)
-            return; // No gamepad connected.
+    /*   void FixedUpdate()
+       {
+           var gamepad = Gamepad.current;
+           if (gamepad == null)
+               return; // No gamepad connected.
 
-        if (gamepad.rightTrigger.wasPressedThisFrame)
-        {
-            // 'Use' code here
-        }
+           if (gamepad.rightTrigger.wasPressedThisFrame)
+           {
+               // 'Use' code here
+           }
 
-        Vector2 move = gamepad.leftStick.ReadValue();
-        // 'Move' code here
-    }
-*/
+           Vector2 move = gamepad.leftStick.ReadValue();
+           // 'Move' code here
+       }
+   */
 }

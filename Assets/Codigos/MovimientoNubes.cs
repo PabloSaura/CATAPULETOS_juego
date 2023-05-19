@@ -10,15 +10,16 @@ public class MovimientoNubes : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Transform.position = movimientoNubes;
-        //transform.Translate(velocidadNubes * Time.deltaTime,0,0);
-        /// HAY QUE AÑADIR LA FUNCION DE RANDOM PARA QUE UNAS VAYAN MÁS RAPIDAS Y OTRAS MÁS LENTAS
-        
+        //transform.position = movimientoNubes;
+        //transform.Translate(velocidadNubes * Time.deltaTime, 0, 0);
+        // HAY QUE AÑADIR LA FUNCION DE RANDOM PARA QUE UNAS VAYAN MÁS RAPIDAS Y OTRAS MÁS LENTAS
+
+
     }
 }
