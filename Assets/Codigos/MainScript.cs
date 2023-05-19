@@ -19,6 +19,7 @@ public class MainScript : MonoBehaviour
     public int Vida_Capsule_Izquierda, Puntos_Izquierda;
     public int Vida_Capsule_Derecha, Puntos_Derecha;
 
+    public static int Vida_Capsules = 100; //Esto es Pocentaje (A petición de Mariano)
 
     //Capsules
     public GameObject cap1;
