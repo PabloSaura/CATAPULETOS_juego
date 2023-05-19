@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8718058561243289724}
   - component: {fileID: 929237639555845721}
-  - component: {fileID: -8372097526564345936}
+  - component: {fileID: 5788006398166489733}
   m_Layer: 0
   m_Name: prefab_nube_1
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-8372097526564345936
+--- !u!114 &5788006398166489733
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,4 +95,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f95095d7309873848bb768edba733692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadNubes: 10
+  velocidadNubes: 0.4

@@ -5,59 +5,56 @@ using UnityEngine;
 public class MainScript : MonoBehaviour
 
 {
+    public PersonajesSeleccionados personajesSeleccionados;
     //Booleano de Comprobación de evento cuando Capsules contactan
     public static bool Besito = false;
-
-    //Puntuación
-    public static int Puntuación = 0;
 
     //Rondas
     public static int Ronda = 3;
 
+
     //Vida Capsules
-    public static int Vida_Capsules = 100; //Esto es Pocentaje (A petición de Mariano)
+    public static int Max_Vida_Capsules = 10; // lo he cambiado de 5 --> 3
+
+    public int Vida_Capsule_Izquierda, Puntos_Izquierda;
+    public int Vida_Capsule_Derecha, Puntos_Derecha;
+
 
     //Capsules
     public GameObject cap1;
     public GameObject cap2;
 
-    public static float velocidadCapsulas = 3f;
+    public static float velocidadCapsulas = 1.5f;
 
-    void Awake(){
-        DontDestroyOnLoad(gameObject); ///ESTO ES PARA QUE NO SE DESTRUYA (video23 GUI Moises)
-    }
-
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        // Esto en realidad habría que quitarlo, el script solo hace falta en la 
+        // escena principal y hacer que no desapareza dará bugs cuando se quiera
+        // jugar más de una vez
+        //DontDestroyOnLoad(gameObject); ///ESTO ES PARA QUE NO SE DESTRUYA (video23 GUI Moises)
+        Vida_Capsule_Derecha = Vida_Capsule_Izquierda = Max_Vida_Capsules;
+        Puntos_Derecha = Puntos_Izquierda = 0;
+        GameObject animacionIzquierda = Instantiate(personajesSeleccionados.PersonajeIzquierda, cap1.transform.position, cap1.transform.rotation, cap1.transform);
+        GameObject animacionDerecha = Instantiate(personajesSeleccionados.PersonajeDerecha, cap2.transform.position, cap2.transform.rotation, cap2.transform);
+        animacionDerecha.GetComponent<SpriteRenderer>().flipX = true;
     }
 
 
-    // Update is called once per frame
-    void Update()
+    public void IniciaPosiciones()
     {
-
-        //Aquí todavía no hay nada
-        Debug.Log (Ronda);
-        Debug.Log (Vida_Capsules);
-
-    }
-
-    public void IniciaPosiciones(){
-        cap1.transform.position = new Vector2(9,-5.7f);
-        cap2.transform.position = new Vector2(-9,-5.7f);
+        cap1.transform.position = new Vector2(-10.5f, -5);
+        cap2.transform.position = new Vector2(10.5f, -5);
         Besito = false;
     }
-/*
-    public void IniciaPosicion1(){
-        cap1.transform.position = new Vector2(21,-6.1f); 
-    }
-    
-    public void IniciaPosicion2(){
-        cap2.transform.position = new Vector2(-21,-6.1f);
-    }
-*/
-    
+    /*
+        public void IniciaPosicion1(){
+            cap1.transform.position = new Vector2(21,-6.1f); 
+        }
+
+        public void IniciaPosicion2(){
+            cap2.transform.position = new Vector2(-21,-6.1f);
+        }
+    */
+
 
 }
