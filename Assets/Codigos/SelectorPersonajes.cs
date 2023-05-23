@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SelectorPersonajes : MonoBehaviour
 {
@@ -71,7 +72,11 @@ public class SelectorPersonajes : MonoBehaviour
         {
             SeleccionarAnterior(2);
         }
+    }
 
+    public void IrAMenuPrincipal()
+    {
+        SceneManager.LoadScene("Start");
     }
 
 }
