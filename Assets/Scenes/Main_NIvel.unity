@@ -1295,6 +1295,7 @@ MonoBehaviour:
   Puntos_Derecha: 0
   cap1: {fileID: 269087691}
   cap2: {fileID: 1465094129}
+  miSkin: {fileID: 11400000, guid: 6b80f5f96b17455428d71e27eaeedc64, type: 2}
 --- !u!114 &594110613
 MonoBehaviour:
   m_ObjectHideFlags: 0

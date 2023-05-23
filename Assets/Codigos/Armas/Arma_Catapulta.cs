@@ -15,7 +15,8 @@ public class Arma_Catapulta : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GetComponent <Rigidbody>().angularVelocity = new Vector2(0,-6);
+        StartCoroutine(stoparm);
     }
 
     // Update is called once per frame

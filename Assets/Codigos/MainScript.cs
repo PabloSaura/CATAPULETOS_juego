@@ -52,10 +52,10 @@ public class MainScript : MonoBehaviour
 
     void OnGUI(){
         GUI.skin = miSkin;
-        GUI.Label(new Rect(20,20,150,80),"Ronda: "+Ronda.ToString(),"estiloScore");
+        GUI.Label(new Rect(812,20,150,80),"Ronda: "+Ronda.ToString(),"estiloJuego");
         //GUI.Label(new Rect(20,20,150,80),"Vida: "+vidas.ToString(),"estiloScore");
         //GUI.Label(new Rect(100,20,150,80),"Score: "+score.ToString(),"estiloScore");
-        GUI.Label(new Rect(100,20,150,80),"Score: "+Puntos_Izquierda.ToString(),"estiloScore");
+        GUI.Label(new Rect(100,20,150,80),"Score: "+Puntos_Izquierda.ToString(),"estiloJuego");
         //GUI.Label(new Rect(180,20,150,80),"Enemigos: "+enemigos.ToString(),"estiloScore");
         //GUI.Label(new Rect(Anchopantalla-100,20,200,100),"Nombre Juego", "estiloTitulo"); /// el primero sería (380,x,x,x)
         ///imagen
