@@ -23,7 +23,7 @@ public class MainScript : MonoBehaviour
     public int Vida_Capsule_Derecha, Puntos_Derecha;
 
     ///mi Skin
-    public GUISkin = miSkin;
+    public GUISkin  miSkin;
 
     //Capsules
     public GameObject cap1;
