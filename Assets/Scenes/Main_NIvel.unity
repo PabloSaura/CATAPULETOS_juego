@@ -1232,7 +1232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563628567}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.81, y: -0, z: 0}
+  m_LocalPosition: {x: -11.7, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2097709421}
@@ -1295,6 +1295,7 @@ MonoBehaviour:
   Puntos_Derecha: 0
   cap1: {fileID: 269087691}
   cap2: {fileID: 1465094129}
+  miSkin: {fileID: 0}
 --- !u!114 &594110613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2173,7 +2174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &973316402
 Transform:
   m_ObjectHideFlags: 0
@@ -2391,7 +2392,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1139277586
 Transform:
   m_ObjectHideFlags: 0
@@ -2722,7 +2723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1d76decc5c8aa84284649980d62fe50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bandaSonora1: {fileID: 8300000, guid: 5e1c6475b36f7ea448523026f4e6cd34, type: 3}
+  bandaSonora1: {fileID: 0}
   clicMenu: {fileID: 0}
   sonidoDisparo: {fileID: 0}
   sonidoImpacto: {fileID: 0}
@@ -3160,7 +3161,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1545435355}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.81, y: 0, z: 0}
+  m_LocalPosition: {x: 11.7, y: 0, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 682844504}
