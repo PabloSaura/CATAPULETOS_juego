@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Flecha : MonoBehaviour
 {
-    public static int Daño = 5;
+    public static int Daño = 1;
     public bool EsDeIzquierda = false;
     Rigidbody2D rb;
     private MainScript mainScript;
