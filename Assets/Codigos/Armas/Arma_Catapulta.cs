@@ -15,8 +15,11 @@ public class Arma_Catapulta : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        /*
         GetComponent <Rigidbody>().angularVelocity = new Vector2(0,-6);
-        StartCoroutine(stoparm);
+        //StartCoroutine(stoparm);
+        */
+        
     }
 
     // Update is called once per frame
@@ -29,7 +32,16 @@ public class Arma_Catapulta : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.E) == true) {
             
-        Instantiate(bola, new Vector3(transform.position.x,transform.position.y,0), Quaternion.identity);
-    }
+            Instantiate(bola, new Vector3(transform.position.x,transform.position.y,0), Quaternion.identity);
+        }
+        
+        /*
+        IEnumerator stoparm(){
+                yield return new WaitForSeconds(.35f); 
+                GetComponent <Rigidbody>().angularVelocity = new Vector2(0,-6);
+        }
+        */
+
+        }
 }
-}
+

@@ -1103,9 +1103,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personajesSeleccionados: {fileID: 11400000, guid: 181d7722d1e55b640b78ab652b5b1d96, type: 2}
-  _Vida_Capsule_Izquierda: 0
+  Vida_Capsule_Izquierda: 0
   Puntos_Izquierda: 0
-  _Vida_Capsule_Derecha: 0
+  Vida_Capsule_Derecha: 0
   Puntos_Derecha: 0
   cap1: {fileID: 269087691}
   cap2: {fileID: 1465094129}
@@ -1485,6 +1485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 761080845}
+  - component: {fileID: 761080846}
   m_Layer: 0
   m_Name: Brazo_Catapulta
   m_TagString: Untagged
@@ -1508,6 +1509,21 @@ Transform:
   m_Father: {fileID: 1123484221}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -78.4}
+--- !u!114 &761080846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761080844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee7ab4d520183a4fa6eb41ec79510dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Catapulta2: {fileID: 0}
+  bola: {fileID: 7860513153332582206, guid: b655013ba6b84264cb242c7258665ee9, type: 3}
+  velocidadBola: 3
 --- !u!1 &841852355
 GameObject:
   m_ObjectHideFlags: 0
