@@ -26,5 +26,9 @@ public class Arma_Catapulta : MonoBehaviour
             Input.GetAxis("Horizontal");
             Input.GetAxis("Vertical");
         }
+        if(Input.GetKeyDown(KeyCode.E) == true) {
+            
+        Instantiate(bola, new Vector3(transform.position.x,transform.position.y,0), Quaternion.identity);
     }
+}
 }
