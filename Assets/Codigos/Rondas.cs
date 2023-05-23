@@ -23,6 +23,7 @@ public class Rondas : MonoBehaviour
         if (MainScript.Besito == true)
         {
             mainScript.IniciaPosiciones();
+            //Sonido Beso
         }
 
         /*
