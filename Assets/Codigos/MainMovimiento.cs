@@ -37,7 +37,7 @@ public class MainMovimiento : MonoBehaviour
     //Comprobación de contacto físico entre Capsules
     void OnCollisionEnter2D(Collision2D otroObjeto)
     {
-        if (otroObjeto.gameObject.name.Contains("Capsule1"))
+        if (otroObjeto.gameObject.name.ToLower().Contains("capsuleizquierda"))
         {
             MainScript.Besito = true;
             /*

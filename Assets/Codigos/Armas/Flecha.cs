@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Flecha : MonoBehaviour
 {
-    public static int Daño = 1;
+    public static int Daño = 5;
     public bool EsDeIzquierda = false;
     Rigidbody2D rb;
     private MainScript mainScript;
@@ -54,6 +54,7 @@ public class Flecha : MonoBehaviour
                 // a la torre derecha
                 if (!EsDeIzquierda)
                 {
+                    Debug.Log("Autogolpe derecha");
                     mainScript.Puntos_Derecha++;
                 }
                 // Si la flecha es de la izquierda, se le suman puntos
@@ -61,7 +62,6 @@ public class Flecha : MonoBehaviour
                 else if (EsDeIzquierda)
                 {
                     Debug.Log("Hit!");
-                    Debug.Log("Autogolpe derecha");
                     mainScript.Puntos_Izquierda++;
                 }
             }
