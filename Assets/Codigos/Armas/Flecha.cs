@@ -6,6 +6,7 @@ public class Flecha : MonoBehaviour
 {
     public static int Daño = 1;
     public bool EsDeIzquierda = false;
+    public bool EsDeDerecha => !EsDeIzquierda;
     Rigidbody2D rb;
     private MainScript mainScript;
 
@@ -32,7 +33,7 @@ public class Flecha : MonoBehaviour
 
                 // Si la flecha es de la derecha, se le suman puntos
                 // a la torre derecha
-                if (!EsDeIzquierda)
+                if (EsDeDerecha)
                 {
                     mainScript.Puntos_Derecha++;
                 }
@@ -45,17 +46,17 @@ public class Flecha : MonoBehaviour
                 }
             }
             // Si el personaje al que se golpea es de la derecha
-            else if (!personaje.EsDeIzquierda)
+            else if (personaje.EsDeDerecha)
             {
                 // Hacerle daño de la flecha
                 mainScript.Vida_Capsule_Derecha -= Daño;
 
                 // Si la flecha es de la derecha, se le restan puntos
                 // a la torre derecha
-                if (!EsDeIzquierda)
+                if (EsDeDerecha)
                 {
                     Debug.Log("Autogolpe derecha");
-                    mainScript.Puntos_Derecha++;
+                    mainScript.Puntos_Derecha--;
                 }
                 // Si la flecha es de la izquierda, se le suman puntos
                 // a la torre izquierda

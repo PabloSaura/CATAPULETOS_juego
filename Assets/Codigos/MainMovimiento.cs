@@ -7,6 +7,7 @@ public class MainMovimiento : MonoBehaviour
     //public GameObject gestorSonido;
 
     public bool EsDeIzquierda = false;
+    public bool EsDeDerecha => !EsDeIzquierda;
 
     GameObject mainObject;
 
