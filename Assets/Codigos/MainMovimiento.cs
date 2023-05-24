@@ -13,10 +13,18 @@ public class MainMovimiento : MonoBehaviour
 
     MainScript mainScript;
 
+
+    GameObject AudioManager;
+
+    audioManager mainAudio;
+
     void Start()
     {
         mainObject = GameObject.Find("MainObject");
         mainScript = mainObject.GetComponent<MainScript>();
+
+        AudioManager = GameObject.Find("AudioManager");
+        mainAudio = AudioManager.GetComponent<audioManager>();
     }
 
     // Update is called once per frame
@@ -41,6 +49,8 @@ public class MainMovimiento : MonoBehaviour
         if (otroObjeto.gameObject.name.ToLower().Contains("capsuleizquierda"))
         {
             MainScript.Besito = true;
+
+            mainAudio.besitoTrue ();
             /*
                         //Sonido beso
                         gestorSonido.GetComponent<audioManager>().sonidoBesito();

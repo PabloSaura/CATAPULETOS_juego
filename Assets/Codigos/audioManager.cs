@@ -9,9 +9,14 @@ public class audioManager : MonoBehaviour
 
     public AudioClip bandaSonora1;
     public AudioClip clicMenu;
-    public AudioClip sonidoDisparo;
-    public AudioClip sonidoImpacto;
+    public AudioClip clicEleccion;
+    public AudioClip clicHecho;
+    public AudioClip sonidoDisparo_Flecha;
+    public AudioClip sonidoImpacto_Flecha;
     public AudioClip sonidoBeso;
+
+    public AudioClip SFX_Grito_H;
+    public AudioClip SFX_Grito_M;
 
 
     private AudioSource hiloMusical;
@@ -65,6 +70,18 @@ public class audioManager : MonoBehaviour
 
     public void clicBoton (){
         hiloMusical.PlayOneShot(clicMenu, 1f);
+    }
+
+    public void clicHechoPJ (){
+        hiloMusical.PlayOneShot(clicHecho, 1f);
+    }
+
+    public void clicEleccionPJ (){
+        hiloMusical.PlayOneShot(clicEleccion, 1f);
+    }
+
+    public void besitoTrue (){
+        hiloMusical.PlayOneShot(sonidoBeso, 1f);
     }
 
 }
