@@ -1102,11 +1102,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 298cf2ea52f0e1f42b4e05f9717c51a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextoPuntuacionIzquierda: {fileID: 0}
+  TextoPuntuacionDerecha: {fileID: 0}
   personajesSeleccionados: {fileID: 11400000, guid: 181d7722d1e55b640b78ab652b5b1d96, type: 2}
   Vida_Capsule_Izquierda: 0
   Puntos_Izquierda: 0
   Vida_Capsule_Derecha: 0
   Puntos_Derecha: 0
+  miSkin: {fileID: 0}
   cap1: {fileID: 269087691}
   cap2: {fileID: 1465094129}
 --- !u!114 &594110613
@@ -2344,7 +2347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1d76decc5c8aa84284649980d62fe50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bandaSonora1: {fileID: 8300000, guid: 5e1c6475b36f7ea448523026f4e6cd34, type: 3}
+  bandaSonora1: {fileID: 0}
   clicMenu: {fileID: 0}
   sonidoDisparo: {fileID: 0}
   sonidoImpacto: {fileID: 0}

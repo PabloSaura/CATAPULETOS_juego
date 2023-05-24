@@ -19,15 +19,19 @@ public class audioManager : MonoBehaviour
 
 
 
-    public GameObject scriptDuplicado;
-    void Awake () {
-        DontDestroyOnLoad(this.gameObject);
+    //public GameObject scriptDuplicado;
+    public static audioManager Instance { get; private set; }
 
-        if(scriptDuplicado == null) {
-           scriptDuplicado = this.gameObject; 
-        } else if (scriptDuplicado != null) {
-            Destroy(this.gameObject);
-        }
+    void Awake () {
+        if (Instance != null && Instance != this) 
+        { 
+            Destroy(this); 
+        } 
+        else 
+        { 
+            Instance = this; 
+            DontDestroyOnLoad(this);
+        } 
     } //Fin Awake
 
 
