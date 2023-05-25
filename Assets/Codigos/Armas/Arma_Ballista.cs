@@ -3,14 +3,71 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Arma_Ballista : MonoBehaviour
+
+
+{
+    public Transform puntoA;
+    public Transform puntoB;
+    public GameObject virotePrefab;
+    public float velocidadGiro = 2f;
+    public float fuerzaDisparo = 10f;
+
+    private Transform objetivo;
+    private bool disparando = false;
+
+    private void Start()
+    {
+        objetivo = puntoA;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.W) && !disparando)
+        {
+            DispararVirote();
+        }
+
+        RotarBallesta();
+    }
+
+    private void RotarBallesta() ///El método RotarBallesta() utiliza Mathf.LerpAngle para interpolar suavemente el ángulo en el eje Z entre el ángulo de puntoA y puntoB, utilizando Mathf.PingPong para que el ángulo oscile automáticamente de un punto a otro.
+    {
+        Vector3 direccion = objetivo.position - transform.position;
+        float anguloZ = Mathf.Atan2(direccion.y, direccion.x) * Mathf.Rad2Deg; ///Mathf.Atan2 para calcular el ángulo en el eje Z basado en la dirección hacia el objetivo
+        Quaternion rotacion = Quaternion.Euler(0f, 0f, anguloZ);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotacion, Time.deltaTime * velocidadGiro);
+
+        objetivo = (objetivo == puntoA) ? puntoB : puntoA;
+    }
+
+    private void DispararVirote()
+    {
+        disparando = true;
+
+        GameObject virote = Instantiate(virotePrefab, transform.position, transform.rotation);
+        Rigidbody2D rb = virote.GetComponent<Rigidbody2D>();
+
+        Vector2 direccionDisparo = transform.right;
+        rb.AddForce(direccionDisparo * fuerzaDisparo, ForceMode2D.Impulse);
+
+        disparando = false;
+    }
+}
+
+
+
+
+
+/*
 {
     //Armas
     //public GameObject Ballista1;
-    public GameObject Ballista2;
+    /////public GameObject Ballista2;
 
     //Proyectil y Velocidad
-    public GameObject virote;
-    public float velocidadVirote = 3.0f; 
+    /////public GameObject virote;
+    /////public float velocidadVirote = 3.0f; 
+    
 
     // Start is called before the first frame update
     void Start()
@@ -21,11 +78,10 @@ public class Arma_Ballista : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Backspace) == true) {
-            Debug.Log("Pulsé [Backspace]");
-            Input.GetAxis("Horizontal");
-            Input.GetAxis("Vertical");
+        /////if(Input.GetKeyDown(KeyCode.Backspace) == true) {
+            /////Debug.Log("Pulsé [Backspace]");
+            /////Input.GetAxis("Horizontal");
+            /////Input.GetAxis("Vertical");
         }
-    }
-
 }
+*/
