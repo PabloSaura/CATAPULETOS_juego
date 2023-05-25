@@ -50,7 +50,7 @@ public class MainMovimiento : MonoBehaviour
         {
             MainScript.Besito = true;
 
-            mainAudio.besitoTrue ();
+            mainAudio.besitoTrue (); //Sonido de Beso
             /*
                         //Sonido beso
                         gestorSonido.GetComponent<audioManager>().sonidoBesito();

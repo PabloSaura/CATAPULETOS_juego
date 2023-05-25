@@ -18,11 +18,11 @@ public class limiteRespawn : MonoBehaviour
     
     void OnTriggerEnter2D (Collider2D Colision) {
         if (Colision.gameObject.name == "CapsuleDerecha") {
-            Colision.gameObject.transform.position = new Vector2 (0,10);
+            Colision.gameObject.transform.position = new Vector2 (18,-5.9f);
         }
 
          if (Colision.gameObject.name == "CapsuleIzquierda") {
-            Colision.gameObject.transform.position = new Vector2 (0,10);
+            Colision.gameObject.transform.position = new Vector2 (-18,-5.9f);
         }
     }
 }

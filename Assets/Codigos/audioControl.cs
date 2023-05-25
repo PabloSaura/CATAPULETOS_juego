@@ -20,11 +20,16 @@ public class audioControl : MonoBehaviour
         
     }
 
+    public void sonidoMenu () {
+        mainAudio.clicBoton();
+    }
+
+ public void sonidoEleccion () {
+        mainAudio.clicEleccionPJ();
+    }
+
     public void sonidoHecho () {
         mainAudio.clicHechoPJ();
     }
 
-    public void sonidoEleccion () {
-        mainAudio.clicEleccionPJ();
-    }
 }
