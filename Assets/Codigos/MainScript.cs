@@ -23,7 +23,7 @@ public class MainScript : MonoBehaviour
     public int Vida_Capsule_Derecha, Puntos_Derecha;
 
     ///mi Skin
-    public GUISkin  miSkin;
+    public GUISkin miSkin;
 
     //Capsules
     public GameObject cap1;
@@ -55,10 +55,11 @@ public class MainScript : MonoBehaviour
 
     void OnGUI(){
         GUI.skin = miSkin;
-        GUI.Label(new Rect(812,20,150,80),"Ronda: "+Ronda.ToString(),"estiloJuego");
+        GUI.Label(new Rect(870,40,150,80),"RONA: "+Ronda.ToString(),"estiloJuego");
         //GUI.Label(new Rect(20,20,150,80),"Vida: "+vidas.ToString(),"estiloScore");
         //GUI.Label(new Rect(100,20,150,80),"Score: "+score.ToString(),"estiloScore");
-        GUI.Label(new Rect(100,20,150,80),"Puntos: "+Puntos_Izquierda.ToString(),"estiloJuego");
+        GUI.Label(new Rect(510,20,150,80),""+Puntos_Izquierda.ToString(),"estiloJuego");
+        GUI.Label(new Rect(1369,20,150,80),""+Puntos_Derecha.ToString(),"estiloJuego");
         //GUI.Label(new Rect(180,20,150,80),"Enemigos: "+enemigos.ToString(),"estiloScore");
         //GUI.Label(new Rect(Anchopantalla-100,20,200,100),"Nombre Juego", "estiloTitulo"); /// el primero sería (380,x,x,x)
         ///imagen
