@@ -6,20 +6,22 @@ public class Arma_Catapulta : MonoBehaviour
 {
     //Armas
     //public GameObject Catapulta1;
-    public GameObject Catapulta2;
+    //public GameObject Catapulta2;
 
     //Proyectil y Velocidad
     //public GameObject bola;
     //public float velocidadBola = 3.0f; 
+
+    /*
     public float fuerzaLanzamiento = 10f;
     public Rigidbody2D bolaPrefab;
     private Rigidbody2D catapultaRB;
-    
+    */
 
     // Start is called before the first frame update
     void Start()
     {
-        catapultaRB = GetComponent<Rigidbody2D>();
+        //catapultaRB = GetComponent<Rigidbody2D>();
         /*
         GetComponent <Rigidbody>().angularVelocity = new Vector2(0,-6);
         //StartCoroutine(stoparm);
@@ -30,11 +32,12 @@ public class Arma_Catapulta : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            if (Input.GetKeyDown(KeyCode.E))
+        /*
+            if (Input.GetKeyDown(KeyCode.E) == true)
         {
             LanzarBola();
         }
-
+        
         void LanzarBola();
         {
         
@@ -46,7 +49,7 @@ public class Arma_Catapulta : MonoBehaviour
         
         bola.AddForce(transform.right * fuerzaLanzamiento, ForceMode2D.Impulse); // Aplicar una fuerza al rigidbody de la bola para lanzarla
         }
-
+        */
 
         }
 }
