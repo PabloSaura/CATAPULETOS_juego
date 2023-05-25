@@ -1152,7 +1152,7 @@ MonoBehaviour:
   Puntos_Izquierda: 0
   Vida_Capsule_Derecha: 0
   Puntos_Derecha: 0
-  miSkin: {fileID: 0}
+  miSkin: {fileID: 11400000, guid: 6b80f5f96b17455428d71e27eaeedc64, type: 2}
   cap1: {fileID: 269087691}
   cap2: {fileID: 1465094129}
 --- !u!114 &594110613
@@ -1179,9 +1179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee7ab4d520183a4fa6eb41ec79510dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Catapulta2: {fileID: 1531640518}
-  bola: {fileID: 1806418572820806685, guid: b655013ba6b84264cb242c7258665ee9, type: 3}
-  velocidadBola: 3
 --- !u!114 &594110615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1567,9 +1564,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cee7ab4d520183a4fa6eb41ec79510dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Catapulta2: {fileID: 0}
-  bola: {fileID: 7860513153332582206, guid: b655013ba6b84264cb242c7258665ee9, type: 3}
-  velocidadBola: 3
 --- !u!1 &841852355
 GameObject:
   m_ObjectHideFlags: 0
