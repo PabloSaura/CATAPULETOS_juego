@@ -48,8 +48,8 @@ public class MainScript : MonoBehaviour
 
     public void IniciaPosiciones()
     {
-        cap1.transform.position = new Vector2(-10.5f, -5);
-        cap2.transform.position = new Vector2(10.5f, -5);
+        cap1.transform.position = new Vector2(-10.5f, -5.9f);
+        cap2.transform.position = new Vector2(10.5f, -5.9f);
         Besito = false;
     }
 
