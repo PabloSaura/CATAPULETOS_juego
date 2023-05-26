@@ -3828,9 +3828,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1605091195}
     m_Modifications:
+    - target: {fileID: 3119620497324593770, guid: b655013ba6b84264cb242c7258665ee9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7860513153332582206, guid: b655013ba6b84264cb242c7258665ee9, type: 3}
       propertyPath: m_Name
       value: Proyectil_Catapulta
+      objectReference: {fileID: 0}
+    - target: {fileID: 7860513153332582206, guid: b655013ba6b84264cb242c7258665ee9, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8937032394071543740, guid: b655013ba6b84264cb242c7258665ee9, type: 3}
       propertyPath: m_RootOrder
@@ -3942,7 +3950,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636760835}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.79, y: 2.38, z: 0}
+  m_LocalPosition: {x: -2.63, y: 1.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 761080845}
