@@ -169,8 +169,9 @@ MonoBehaviour:
   puntoA: {fileID: 1159149169}
   puntoB: {fileID: 1969484005}
   virotePrefab: {fileID: 4406459295847282566, guid: e8fbc359005924f4da751bad2e643191, type: 3}
-  velocidadGiro: 2
+  velocidadGiro: 28
   fuerzaDisparo: 10
+  distanciaDestruccion: 27
 --- !u!1001 &112358583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -345,7 +346,7 @@ Transform:
   - {fileID: 1999103297}
   - {fileID: 1828718832}
   m_Father: {fileID: 1317122002}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -78.4}
 --- !u!1 &203690318
 GameObject:
@@ -2011,8 +2012,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 761080845}
-  - component: {fileID: 761080846}
-  - component: {fileID: 761080847}
   m_Layer: 3
   m_Name: Brazo_Catapulta
   m_TagString: Untagged
@@ -2036,37 +2035,6 @@ Transform:
   m_Father: {fileID: 1123484221}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -78.4}
---- !u!114 &761080846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761080844}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cee7ab4d520183a4fa6eb41ec79510dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Catapulta2: {fileID: 0}
-  bola: {fileID: 7860513153332582206, guid: b655013ba6b84264cb242c7258665ee9, type: 3}
-  velocidadBola: 3
---- !u!114 &761080847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 761080844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e865f10edf3e5842bb1d3ec6c6a7256, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bolaPrefab: {fileID: 7860513153332582206, guid: b655013ba6b84264cb242c7258665ee9, type: 3}
-  fuerzaLanzamiento: 10
-  variacionX: 118.32
-  distanciaDestruccion: 27
 --- !u!1 &841852355
 GameObject:
   m_ObjectHideFlags: 0
@@ -2149,6 +2117,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &844194947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 844194948}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &844194948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844194947}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.32672, y: 5.7499623, z: -9.146539}
+  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1317122002}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &851311663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,6 +2657,7 @@ Transform:
   m_Children:
   - {fileID: 761080845}
   - {fileID: 1531640519}
+  - {fileID: 1457867719}
   m_Father: {fileID: 1605091195}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3041,6 +3040,7 @@ Transform:
   m_LocalPosition: {x: 13.55, y: -6.12, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
+  - {fileID: 844194948}
   - {fileID: 154584409}
   - {fileID: 2100864489}
   m_Father: {fileID: 721519649}
@@ -3406,6 +3406,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 721519649}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1457867718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1457867719}
+  m_Layer: 0
+  m_Name: child_prueba
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1457867719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457867718}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.66, y: 3.03, z: -9.146539}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1123484221}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1465094129
 GameObject:
@@ -3896,6 +3926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1636760836}
+  - component: {fileID: 1636760837}
   m_Layer: 3
   m_Name: puntoDisparo3
   m_TagString: Untagged
@@ -3911,12 +3942,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636760835}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.79, y: 0.11, z: 0}
+  m_LocalPosition: {x: -2.79, y: 2.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 761080845}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1636760837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636760835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e865f10edf3e5842bb1d3ec6c6a7256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bolaPrefab: {fileID: 7860513153332582206, guid: b655013ba6b84264cb242c7258665ee9, type: 3}
+  fuerzaLanzamiento: 100
+  variacionX: 27
+  distanciaDestruccion: 27
+  CapsuleIzquierda: {fileID: 269087691}
+  CapsuleDerecha: {fileID: 1465094129}
 --- !u!1 &1784508441
 GameObject:
   m_ObjectHideFlags: 0
@@ -4864,7 +4913,7 @@ Transform:
   m_LocalScale: {x: 0.7922, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 1317122002}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2100864490
 SpriteRenderer:
