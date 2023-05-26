@@ -17,9 +17,23 @@ public class Flecha : MonoBehaviour
         mainScript = FindObjectOfType<MainScript>();
     }
 
+       // Update is called once per frame
+    void Update()
+    {
+        
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+        if (collision.gameObject.name == "CapsuleIzquierda") {
+            Destroy(this.gameObject);
+        }
+
+        if (collision.gameObject.name == "CapsuleDerecha") {
+            Destroy(this.gameObject);
+        }
+
         MainMovimiento personaje = collision.collider.gameObject.GetComponent<MainMovimiento>();
         // Si se ha chocado con un personaje, le quitamos vida y eso
         if (personaje != null)

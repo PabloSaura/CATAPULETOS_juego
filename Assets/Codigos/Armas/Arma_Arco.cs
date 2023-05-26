@@ -24,6 +24,7 @@ public class Arma_Arco : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.E) == true)
         {
             Debug.Log("Pulsé [E]");
@@ -32,6 +33,7 @@ public class Arma_Arco : MonoBehaviour
             //this.GetComponentInParent<AudioSource>().PlayOneShot(sonidoBola);
             //Instantiate(flecha, new Vector3(transform.position.x,transform.position.y,0), Quaternion.identity);
         }
+        */
 
         if (Input.GetMouseButtonDown(0))
         {
