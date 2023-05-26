@@ -6,10 +6,13 @@ public class Catapulta_prueba : MonoBehaviour
 {
     public GameObject bolaPrefab;
     public float fuerzaLanzamiento = 10f;
-    public float variacionX = 1f;
+    public float variacionX = 27f; //medidas provisionales
     public float distanciaDestruccion = 27f; ///para que se destruyaaa
 
     private GameObject bolaLanzada;
+    public GameObject CapsuleIzquierda;
+    public GameObject CapsuleDerecha;
+
 
     private void Update()
     {
@@ -18,25 +21,34 @@ public class Catapulta_prueba : MonoBehaviour
             LanzarBola();
         }
 
-        if (bolaLanzada != null && Vector2.Distance(transform.position, bolaLanzada.transform.position) >= distanciaDestruccion)
+        if (bolaLanzada != null && Vector2.Distance(transform.position, bolaLanzada.transform.position) >= distanciaDestruccion) // NULL: para indicar un valor no definido o desconocido (volver a ver el tuto)
         {
             Destroy(bolaLanzada);
-            bolaLanzada = null; ///null mirar tutotial de nuevo
+            bolaLanzada = null; ///null: para indicar un valor no definido o desconocido (mirar tutotial de nuevo)
         }
     }
+    
 
     private void LanzarBola()
     {
         if (bolaLanzada != null)
         {
-            Destroy(bolaLanzada);
+            
         }
+        /*
+        void OnCollisionEnter(Collision collision) ///ESTO ES PARA DESTRUIR LA BOLA AL TOCAR A LOS PERSONAJES
+    {
+        if (collision.gameObject == CapsuleDerecha)
+        {
+            Destroy(bolaPrefab);
+        }
+        */
 
         bolaLanzada = Instantiate(bolaPrefab, transform.position, Quaternion.identity);
         Rigidbody2D rb = bolaLanzada.GetComponent<Rigidbody2D>();
 
         // Aplica una fuerza en la dirección hacia la derecha con una variación en el eje X
-        Vector2 fuerza = new Vector2(fuerzaLanzamiento + Random.Range(-variacionX, variacionX), 0f);
+        Vector2 fuerza = new Vector2(fuerzaLanzamiento + Random.Range(variacionX, variacionX), 27f); /// EL 27f ES LA FUERZA EN "Y" PARA QUE VAYA BOMBEADITA
         rb.AddForce(fuerza, ForceMode2D.Impulse);
     }
 }

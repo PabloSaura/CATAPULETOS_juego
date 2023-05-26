@@ -14,6 +14,7 @@ public class Arma_Ballista : MonoBehaviour
 
     private Transform objetivo;
     private bool disparando = false;
+    public float distanciaDestruccion = 27f; ///para que se destruyaaa
 
     private void Start()
     {
@@ -25,6 +26,7 @@ public class Arma_Ballista : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && !disparando)
         {
             DispararVirote();
+            Destroy(virotePrefab);
         }
 
         RotarBallesta();
@@ -34,8 +36,8 @@ public class Arma_Ballista : MonoBehaviour
     {
         Vector3 direccion = objetivo.position - transform.position;
         float anguloZ = Mathf.Atan2(direccion.y, direccion.x) * Mathf.Rad2Deg; ///Mathf.Atan2 para calcular el ángulo en el eje Z basado en la dirección hacia el objetivo
-        Quaternion rotacion = Quaternion.Euler(0f, 0f, anguloZ);
-        transform.rotation = Quaternion.Slerp(transform.rotation, rotacion, Time.deltaTime * velocidadGiro);
+        Quaternion rotacion = Quaternion.Euler(0f, 0f, anguloZ); ///EUKER usar para representar la orientación o rotación de un objeto
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotacion, Time.deltaTime * velocidadGiro); ///SLERP Interpola entre dos orientaciones mediante la interpolación lineal esférica.
 
         objetivo = (objetivo == puntoA) ? puntoB : puntoA;
     }
