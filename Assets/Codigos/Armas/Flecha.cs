@@ -10,11 +10,20 @@ public class Flecha : MonoBehaviour
     Rigidbody2D rb;
     private MainScript mainScript;
 
+
+    GameObject AudioManager;
+
+    audioManager mainAudio;
+
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         mainScript = FindObjectOfType<MainScript>();
+
+        AudioManager = GameObject.Find("AudioManager");
+        mainAudio = AudioManager.GetComponent<audioManager>();
     }
 
        // Update is called once per frame
@@ -28,10 +37,14 @@ public class Flecha : MonoBehaviour
 
         if (collision.gameObject.name == "CapsuleIzquierda") {
             Destroy(this.gameObject);
+            mainAudio.impactaFlecha (); //Sonido
+            mainAudio.GritaM (); //Sonido Grito
         }
 
         if (collision.gameObject.name == "CapsuleDerecha") {
             Destroy(this.gameObject);
+            mainAudio.impactaFlecha (); //Sonido
+            mainAudio.GritaH (); //Sonido Grito
         }
 
         MainMovimiento personaje = collision.collider.gameObject.GetComponent<MainMovimiento>();

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class control_Arco : MonoBehaviour
 {
+    
     public GameObject point;
     GameObject[] puntos;
     public int numeroDePuntos;

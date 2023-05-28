@@ -24,7 +24,7 @@ public class audioControl : MonoBehaviour
         mainAudio.clicBoton();
     }
 
- public void sonidoEleccion () {
+    public void sonidoEleccion () {
         mainAudio.clicEleccionPJ();
     }
 
@@ -32,4 +32,13 @@ public class audioControl : MonoBehaviour
         mainAudio.clicHechoPJ();
     }
 
+
+
+    public void sonidoArco () {
+        mainAudio.disparaFlecha();
+    }
+
+     public void impactaFlecha () {
+        mainAudio.disparaFlecha();
+    }
 }

@@ -19,16 +19,19 @@ public class limiteRespawnNubes : MonoBehaviour
         
     }
 
+    /* OBSOLETO MÉTODO DE RESPAWN DE NUBES
     void OnTriggerEnter2D (Collider2D Colision) {
 
         Debug.Log(Colision.gameObject.name);
         if (Colision.gameObject.name.StartsWith("prefabNube")) {
             Colision.gameObject.transform.position = new Vector2 (-20.5f,Colision.gameObject.transform.position.y);
         }
+    }
+    */
 
     
         
   
         
-    }
+    
 }

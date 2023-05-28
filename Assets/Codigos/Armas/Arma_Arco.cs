@@ -5,6 +5,12 @@ using UnityEngine.InputSystem;
 
 public class Arma_Arco : MonoBehaviour
 {
+
+    GameObject AudioManager;
+
+    audioManager mainAudio;
+
+
     public bool EsDeIzquierda = false;
     //Armas
     //public GameObject Arco1;
@@ -15,10 +21,12 @@ public class Arma_Arco : MonoBehaviour
     public float velocidadFlecha = 3.0f;
     public Transform puntoDisparo;
 
+
     // Start is called before the first frame update
     void Start()
     {
-
+        AudioManager = GameObject.Find("AudioManager");
+        mainAudio = AudioManager.GetComponent<audioManager>();
     }
 
     // Update is called once per frame
@@ -38,6 +46,8 @@ public class Arma_Arco : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Disparo();
+
+            mainAudio.disparaFlecha (); //Sonido
         }
     }
 

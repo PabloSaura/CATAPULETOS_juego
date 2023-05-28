@@ -21,8 +21,8 @@ public class MovimientoNubes : MonoBehaviour
         /// HAY QUE AÑADIR LA FUNCION DE RANDOM PARA QUE UNAS VAYAN MÁS RAPIDAS Y OTRAS MÁS LENTAS
 
         // COMANDO PARA EL RESPAWN
-        if(transform.position.x >= 12f){
-            transform.position = new Vector2 (-12.5f,transform.position.y);
+        if(transform.position.x >= 22f){
+            transform.position = new Vector2 (-22f,transform.position.y);
         }
     }
 }

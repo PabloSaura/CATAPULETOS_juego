@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Catapulta_prueba : MonoBehaviour
 {
+    GameObject AudioManager;
+
+    audioManager mainAudio;
+
+
     public GameObject bolaPrefab;
     public float fuerzaLanzamiento = 10f;
     public float variacionX = 27f; //medidas provisionales
@@ -18,6 +23,13 @@ public class Catapulta_prueba : MonoBehaviour
     public GameObject CapsuleDerecha;
 
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        AudioManager = GameObject.Find("AudioManager");
+        mainAudio = AudioManager.GetComponent<audioManager>();
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && puedoLanzar == true)
@@ -25,6 +37,9 @@ public class Catapulta_prueba : MonoBehaviour
                     Debug.Log("lanzar");
             puedoLanzar = false;
             LanzarBola();
+
+            mainAudio.disparaCatapulta (); //Sonido
+
             StartCoroutine(esperaBola());
         }
         
