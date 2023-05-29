@@ -32,7 +32,7 @@ public class Catapulta_prueba : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && puedoLanzar == true)
+        if (Input.GetKeyDown(KeyCode.E) && puedoLanzar == true && gameObject.name == "puntoDisparo2")
         {
                     Debug.Log("lanzar");
             puedoLanzar = false;
@@ -42,7 +42,19 @@ public class Catapulta_prueba : MonoBehaviour
 
             StartCoroutine(esperaBola());
         }
-        
+
+        /* //CONTROL para Bando_Derecha
+        if (Input.GetKeyDown(KeyCode.//) && puedoLanzar == true && gameObject.name == "puntoDisparo1")
+        {
+                    Debug.Log("lanzar");
+            puedoLanzar = false;
+            LanzarBola();
+
+            mainAudio.disparaCatapulta (); //Sonido
+
+            StartCoroutine(esperaBola());
+        }
+        */
 
         if (bolaLanzada != null && Vector2.Distance(transform.position, bolaLanzada.transform.position) >= distanciaDestruccion) // NULL: para indicar un valor no definido o desconocido (volver a ver el tuto)
         {
