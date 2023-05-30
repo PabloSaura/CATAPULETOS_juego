@@ -11,6 +11,7 @@ public class Catapulta_prueba : MonoBehaviour
 
     public GameObject bolaPrefab;
     public float fuerzaLanzamiento = 10f;
+
     public float variacionX = 27f; //medidas provisionales
     public float distanciaDestruccion = 27f; ///para que se destruyaaa
 
@@ -32,19 +33,19 @@ public class Catapulta_prueba : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && puedoLanzar == true && gameObject.name == "puntoDisparo2")
+        if (Input.GetKeyDown(KeyCode.RightShift) && puedoLanzar == true && gameObject.name == "puntoDisparo2")
         {
                     Debug.Log("lanzar");
             puedoLanzar = false;
             LanzarBola();
 
-            mainAudio.disparaCatapulta (); //Sonido
+            mainAudio.disparaCatapulta(); //Sonido
 
             StartCoroutine(esperaBola());
         }
 
         /* //CONTROL para Bando_Derecha
-        if (Input.GetKeyDown(KeyCode.//) && puedoLanzar == true && gameObject.name == "puntoDisparo1")
+        if (Input.GetKeyDown(KeyCode.LeftShift) && puedoLanzar == true && gameObject.name == "puntoDisparo1")
         {
                     Debug.Log("lanzar");
             puedoLanzar = false;
@@ -70,9 +71,13 @@ public class Catapulta_prueba : MonoBehaviour
             lanzaBola = true;
             Debug.Log (lanzaBola);
         }
+<<<<<<< HEAD
         /*
 <<<<<<< HEAD
         /*
+=======
+    /*    
+>>>>>>> cfbf2b6be1bb954b5ae94bd60c451ee5030e0d26
         void OnCollisionEnter(Collision collision) ///ESTO ES PARA DESTRUIR LA BOLA AL TOCAR A LOS PERSONAJES
     {
         if (collision.gameObject.name == "CapsuleDerecha")
@@ -83,6 +88,7 @@ public class Catapulta_prueba : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+<<<<<<< HEAD
         
 =======
 
@@ -93,20 +99,27 @@ public class Catapulta_prueba : MonoBehaviour
         }
 >>>>>>> 652b202048505be535a07b4ad5261a0b284cb046
         */
+=======
+    */
+
+>>>>>>> cfbf2b6be1bb954b5ae94bd60c451ee5030e0d26
         bolaLanzada = Instantiate(bolaPrefab, transform.position, Quaternion.identity);
         Rigidbody2D rb = bolaLanzada.GetComponent<Rigidbody2D>();
 
         // Aplica una fuerza en la dirección hacia la derecha con una variación en el eje X
-        Vector2 fuerza = new Vector2(fuerzaLanzamiento + Random.Range(variacionX, variacionX), 27f); /// EL 27f ES LA FUERZA EN "Y" PARA QUE VAYA BOMBEADITA
+        Vector2 fuerza = new Vector2(fuerzaLanzamiento + Random.Range(variacionX-10, variacionX+10), 100f); /// EL 27f ES LA FUERZA EN "Y" PARA QUE VAYA BOMBEADITA
+
         rb.AddForce(fuerza, ForceMode2D.Impulse);
     }
 
     IEnumerator esperaBola()
     {
-        
         yield return new WaitForSeconds(3f);
         puedoLanzar = true;
-        Debug.Log("puedo lanzar");
+        Debug.Log("puedo lanzar Bola");
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> cfbf2b6be1bb954b5ae94bd60c451ee5030e0d26

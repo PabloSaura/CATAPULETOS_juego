@@ -21,6 +21,9 @@ public class Arma_Arco : MonoBehaviour
     public float velocidadFlecha = 3.0f;
     public Transform puntoDisparo;
 
+    bool lanzaFlecha = false;
+    bool puedoLanzar = true;
+
 
     // Start is called before the first frame update
     void Start()
@@ -43,12 +46,27 @@ public class Arma_Arco : MonoBehaviour
         }
         */
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && puedoLanzar == true)
         {
             Disparo();
 
             mainAudio.disparaFlecha (); //Sonido
+
+            puedoLanzar = false;
+            StartCoroutine(esperaFlecha());
         }
+
+        /* //Bando Derecha
+        if (Input.GetMouseButtonDown(0) && puedoLanzar == true)
+        {
+            Disparo();
+
+            mainAudio.disparaFlecha (); //Sonido
+
+            puedoLanzar = false;
+            StartCoroutine(esperaFlecha());
+        }
+        */
     }
 
     //Averiguar botones de Mando
@@ -57,6 +75,13 @@ public class Arma_Arco : MonoBehaviour
             Debug.Log ( "Juego con Mandito" + eventoBoton.button);
         }
     */
+
+    IEnumerator esperaFlecha()
+    {
+        yield return new WaitForSeconds(0.75f);
+        puedoLanzar = true;
+        Debug.Log("puedo lanzar Flecha");
+    }
 
     void Disparo()
     {

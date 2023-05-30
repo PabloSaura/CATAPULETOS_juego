@@ -25,19 +25,21 @@ public class Arma_Ballista : MonoBehaviour
     {
         RotarBallesta();
 
-        if (Input.GetKeyDown(KeyCode.W) && !disparando)
+        if (Input.GetKeyDown(KeyCode.Return) && !disparando && gameObject.name == "puntoDisparo2")
         {
             DispararVirote();
             Destroy(virotePrefab);
+
+            //corutine de 1.5f segundos
         }
 
-        /* //CONTROL para Bando_Derecha
-        if (Input.GetKeyDown(KeyCode.//) && !disparando)
+        //CONTROL para Bando_Derecha
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !disparando  && gameObject.name == "puntoDisparo1")
         {
             DispararVirote();
             Destroy(virotePrefab);
         }
-        */
+        
     }
 
     private void RotarBallesta() ///El método RotarBallesta() utiliza Mathf.LerpAngle para interpolar suavemente el ángulo en el eje Z entre el ángulo de puntoA y puntoB, utilizando Mathf.PingPong para que el ángulo oscile automáticamente de un punto a otro.
@@ -62,6 +64,13 @@ public class Arma_Ballista : MonoBehaviour
 
         disparando = false;
     }
+
+    /**/
+    void OnGUI () {
+        Event eventoTecla = Event.current;
+        Debug.Log ("La tecla presionada:" + eventoTecla.keyCode);
+    }
+    
 }
 
 

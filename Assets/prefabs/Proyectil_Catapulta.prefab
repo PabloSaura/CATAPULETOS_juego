@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8937032394071543740}
   - component: {fileID: 8519002154348376012}
-  - component: {fileID: 3119620497324593770}
   - component: {fileID: 7140168152644955195}
   - component: {fileID: 452574290089964608}
+  - component: {fileID: 8302251306911989764}
   m_Layer: 9
   m_Name: Proyectil_Catapulta
   m_TagString: Untagged
@@ -85,22 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &3119620497324593770
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7860513153332582206}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -1.52, y: 0.2}
-  serializedVersion: 2
-  m_Radius: 0.35337782
 --- !u!50 &7140168152644955195
 Rigidbody2D:
   serializedVersion: 4
@@ -134,3 +118,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f63ee93c0d40d0e4fb32351fb66e8f8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &8302251306911989764
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7860513153332582206}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.005, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.35162133
