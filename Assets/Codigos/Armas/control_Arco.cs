@@ -14,6 +14,7 @@ public class control_Arco : MonoBehaviour
 
     Vector2 Direccion;
 
+    public Transform punteroArco;
 
     bool lanzaFlecha = false;
     bool puedoLanzar = true;
@@ -39,23 +40,34 @@ public class control_Arco : MonoBehaviour
     void Update()
     {
         if (gameObject.name == "Arco_Pivote1") {
-        Vector2 arco_Posicion = transform.position;
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Direccion = mousePosition - arco_Posicion;
-        transform.right = Direccion;
+            Vector2 arco_Posicion = transform.position;
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Direccion = mousePosition - arco_Posicion;
+            transform.right = Direccion;
 
-        puedoLanzar = false;
-        StartCoroutine(esperaFlecha());
+            puedoLanzar = false;
+            StartCoroutine(esperaFlecha());
         }
 
-        
+        if (gameObject.name == "Arco_Pivote2") {
+            Vector2 arco_Posicion = transform.position;
+            Vector2 mousePosition = punteroArco.position;
+            Direccion = mousePosition - arco_Posicion;
+            transform.right = Direccion;
+
+            Debug.Log ("Arco_Pivote2");
+
+            puedoLanzar = false;
+            StartCoroutine(esperaFlecha());
+        }
+
 
         /* //CONTROL para Bando_Derecha
-        if (gameObject.name == "Arco_Pivote2") {
-        Vector2 arco_Posicion = transform.position;
-        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Direccion = mousePosition - arco_Posicion;
-        transform.right = Direccion;
+            if (gameObject.name == "Arco_Pivote2") {
+            Vector2 arco_Posicion = transform.position;
+            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Direccion = mousePosition - arco_Posicion;
+            transform.right = Direccion;
         }
         */
 

@@ -14,7 +14,7 @@ public class MainScript : MonoBehaviour
     public static bool Besito = false;
 
     //Rondas
-    public static int Ronda = 3;
+    public static int Ronda = 10;
 
 
     //Vida Capsules
