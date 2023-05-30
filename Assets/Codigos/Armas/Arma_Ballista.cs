@@ -9,7 +9,7 @@ public class Arma_Ballista : MonoBehaviour
     public Transform puntoA;
     public Transform puntoB;
     public GameObject virotePrefab;
-    public float velocidadGiro = 2f;
+    public float velocidadGiro = 27f;
     public float fuerzaDisparo = 10f;
 
     private Transform objetivo;

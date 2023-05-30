@@ -35,14 +35,18 @@ public class Catapulta_prueba : MonoBehaviour
         {
             
         }
-        /*
+        
         void OnCollisionEnter(Collision collision) ///ESTO ES PARA DESTRUIR LA BOLA AL TOCAR A LOS PERSONAJES
     {
-        if (collision.gameObject == CapsuleDerecha)
+        if (collision.gameObject.name == "CapsuleDerecha")
         {
-            Destroy(bolaPrefab);
+            Destroy(this.gameObject);
         }
-        */
+        if (collision.gameObject.name == "CapsuleIzquierda")
+        {
+            Destroy(this.gameObject);
+        }
+        
 
         bolaLanzada = Instantiate(bolaPrefab, transform.position, Quaternion.identity);
         Rigidbody2D rb = bolaLanzada.GetComponent<Rigidbody2D>();
@@ -51,4 +55,5 @@ public class Catapulta_prueba : MonoBehaviour
         Vector2 fuerza = new Vector2(fuerzaLanzamiento + Random.Range(variacionX, variacionX), 27f); /// EL 27f ES LA FUERZA EN "Y" PARA QUE VAYA BOMBEADITA
         rb.AddForce(fuerza, ForceMode2D.Impulse);
     }
+}
 }
