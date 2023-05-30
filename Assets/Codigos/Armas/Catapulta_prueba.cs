@@ -72,7 +72,7 @@ public class Catapulta_prueba : MonoBehaviour
             Debug.Log (lanzaBola);
         }
 <<<<<<< HEAD
-        
+    /*    
         void OnCollisionEnter(Collision collision) ///ESTO ES PARA DESTRUIR LA BOLA AL TOCAR A LOS PERSONAJES
     {
         if (collision.gameObject.name == "CapsuleDerecha")
@@ -83,14 +83,15 @@ public class Catapulta_prueba : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        
+    */
 =======
-
+        /*
         if (lanzaBola == true) {
             //Time.deltaTime
             //Queremos que al Instanciar una Bola salte un contador que no deje Instanciar otra en X tiempo
 
         }
+        */
 >>>>>>> 652b202048505be535a07b4ad5261a0b284cb046
 
         bolaLanzada = Instantiate(bolaPrefab, transform.position, Quaternion.identity);
@@ -108,5 +109,4 @@ public class Catapulta_prueba : MonoBehaviour
         puedoLanzar = true;
         Debug.Log("puedo lanzar Bola");
     }
-}
 }
