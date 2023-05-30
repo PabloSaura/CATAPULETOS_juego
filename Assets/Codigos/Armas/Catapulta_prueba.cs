@@ -33,6 +33,7 @@ public class Catapulta_prueba : MonoBehaviour
 
     private void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.RightShift) && puedoLanzar == true && gameObject.name == "puntoDisparo2")
         {
                     Debug.Log("lanzar");
@@ -44,7 +45,7 @@ public class Catapulta_prueba : MonoBehaviour
             StartCoroutine(esperaBola());
         }
 
-        /* //CONTROL para Bando_Derecha
+         //CONTROL para Bando_Derecha
         if (Input.GetKeyDown(KeyCode.LeftShift) && puedoLanzar == true && gameObject.name == "puntoDisparo1")
         {
                     Debug.Log("lanzar");
@@ -55,7 +56,7 @@ public class Catapulta_prueba : MonoBehaviour
 
             StartCoroutine(esperaBola());
         }
-        */
+        
 
         if (bolaLanzada != null && Vector2.Distance(transform.position, bolaLanzada.transform.position) >= distanciaDestruccion) // NULL: para indicar un valor no definido o desconocido (volver a ver el tuto)
         {
@@ -71,7 +72,7 @@ public class Catapulta_prueba : MonoBehaviour
             lanzaBola = true;
             Debug.Log (lanzaBola);
         }
-    /*    
+    }  
         void OnCollisionEnter(Collision collision) ///ESTO ES PARA DESTRUIR LA BOLA AL TOCAR A LOS PERSONAJES
     {
         if (collision.gameObject.name == "CapsuleDerecha")
@@ -82,7 +83,7 @@ public class Catapulta_prueba : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-    */
+    
 
         bolaLanzada = Instantiate(bolaPrefab, transform.position, Quaternion.identity);
         Rigidbody2D rb = bolaLanzada.GetComponent<Rigidbody2D>();
