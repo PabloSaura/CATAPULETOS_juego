@@ -1553,6 +1553,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1090968167}
     m_Modifications:
+    - target: {fileID: 929237639555845721, guid: aa46a7a6bc05f344c8e0d382d8cb36cf, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 929237639555845721, guid: aa46a7a6bc05f344c8e0d382d8cb36cf, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4157247545468023113, guid: aa46a7a6bc05f344c8e0d382d8cb36cf, type: 3}
       propertyPath: m_Name
       value: prefab_nube_1 (4)
