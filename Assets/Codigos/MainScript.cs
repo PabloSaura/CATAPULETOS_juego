@@ -55,7 +55,7 @@ public class MainScript : MonoBehaviour
 
     void OnGUI(){
         GUI.skin = miSkin;
-        GUI.Label(new Rect(870,40,150,80),"RONA: "+Ronda.ToString(),"estiloJuego");
+        GUI.Label(new Rect(870,40,150,80),"RONDA: "+Ronda.ToString(),"estiloJuego");
         //GUI.Label(new Rect(20,20,150,80),"Vida: "+vidas.ToString(),"estiloScore");
         //GUI.Label(new Rect(100,20,150,80),"Score: "+score.ToString(),"estiloScore");
         GUI.Label(new Rect(510,20,150,80),""+Puntos_Izquierda.ToString(),"estiloJuego");

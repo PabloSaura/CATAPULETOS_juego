@@ -8,15 +8,24 @@ public class audioManager : MonoBehaviour
 {
 
     public AudioClip bandaSonora1;
+
     public AudioClip clicMenu;
     public AudioClip clicEleccion;
     public AudioClip clicHecho;
+
     public AudioClip sonidoDisparo_Flecha;
     public AudioClip sonidoImpacto_Flecha;
+
+    public AudioClip sonidoDisparo_Catapulta;
+    public AudioClip sonidoImpacto_Catapulta;
+    
     public AudioClip sonidoBeso;
 
-    public AudioClip SFX_Grito_H;
-    public AudioClip SFX_Grito_M;
+    public AudioClip sfxGritoH;
+    public AudioClip sfxGritoM;
+
+    public AudioClip sfxGritoH2;
+    public AudioClip sfxGritoM2;
 
 
     private AudioSource hiloMusical;
@@ -78,6 +87,40 @@ public class audioManager : MonoBehaviour
 
     public void clicEleccionPJ (){
         hiloMusical.PlayOneShot(clicEleccion, 1f);
+    }
+
+
+
+    public void disparaFlecha (){
+        hiloMusical.PlayOneShot(sonidoDisparo_Flecha, 1f);
+    }
+
+    public void impactaFlecha (){
+        hiloMusical.PlayOneShot(sonidoImpacto_Flecha, 1f);
+    }
+
+    public void GritaH (){
+        hiloMusical.PlayOneShot(sfxGritoH, 1f);
+    }
+
+    public void GritaM (){
+        hiloMusical.PlayOneShot(sfxGritoM, 1f);
+    }
+
+    public void disparaCatapulta (){
+        hiloMusical.PlayOneShot(sonidoDisparo_Catapulta, 1f);
+    }
+
+    public void impactaCatapulta (){
+     hiloMusical.PlayOneShot(sonidoImpacto_Catapulta, 1f);
+    }
+
+    public void GritaH2 (){
+        hiloMusical.PlayOneShot(sfxGritoH2, 1f);
+    }
+
+    public void GritaM2 (){
+        hiloMusical.PlayOneShot(sfxGritoM2, 1f);
     }
 
     public void besitoTrue (){

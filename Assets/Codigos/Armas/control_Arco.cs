@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class control_Arco : MonoBehaviour
 {
+    
     public GameObject point;
     GameObject[] puntos;
     public int numeroDePuntos;
@@ -38,6 +39,15 @@ public class control_Arco : MonoBehaviour
         Direccion = mousePosition - arco_Posicion;
         transform.right = Direccion;
         }
+
+        /* //CONTROL para Bando_Derecha
+        if (gameObject.name == "Arco_Pivote2") {
+        Vector2 arco_Posicion = transform.position;
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Direccion = mousePosition - arco_Posicion;
+        transform.right = Direccion;
+        }
+        */
 
     }
 

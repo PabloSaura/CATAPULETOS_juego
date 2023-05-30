@@ -23,13 +23,21 @@ public class Arma_Ballista : MonoBehaviour
 
     private void Update()
     {
+        RotarBallesta();
+
         if (Input.GetKeyDown(KeyCode.W) && !disparando)
         {
             DispararVirote();
             Destroy(virotePrefab);
         }
 
-        RotarBallesta();
+        /* //CONTROL para Bando_Derecha
+        if (Input.GetKeyDown(KeyCode.//) && !disparando)
+        {
+            DispararVirote();
+            Destroy(virotePrefab);
+        }
+        */
     }
 
     private void RotarBallesta() ///El método RotarBallesta() utiliza Mathf.LerpAngle para interpolar suavemente el ángulo en el eje Z entre el ángulo de puntoA y puntoB, utilizando Mathf.PingPong para que el ángulo oscile automáticamente de un punto a otro.

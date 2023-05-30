@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//DEPRECATED
 public class limiteRespawnNubes : MonoBehaviour
 {
 
@@ -19,16 +19,19 @@ public class limiteRespawnNubes : MonoBehaviour
         
     }
 
+    /* OBSOLETO MÉTODO DE RESPAWN DE NUBES
     void OnTriggerEnter2D (Collider2D Colision) {
-        if (Colision.gameObject.name == "prefabNube16") {
-            Colision.gameObject.transform.position = new Vector2 (-20.5f,0);
+
+        Debug.Log(Colision.gameObject.name);
+        if (Colision.gameObject.name.StartsWith("prefabNube")) {
+            Colision.gameObject.transform.position = new Vector2 (-20.5f,Colision.gameObject.transform.position.y);
         }
+    }
+    */
 
     
         
-         if (Colision.gameObject.name == "Nube10") {
-            Colision.gameObject.transform.position = new Vector2 (-18,-5.9f);
-        }
+  
         
-    }
+    
 }

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4008779014283222323}
   - component: {fileID: 3922092900221139816}
   - component: {fileID: 4764762606488802489}
-  - component: {fileID: 1716788551725021674}
   - component: {fileID: 8361260137878817624}
   m_Layer: 0
   m_Name: prefabNube3
@@ -98,70 +97,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadNubes: 0.5
---- !u!60 &1716788551725021674
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7849333754219501914}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 5.21, y: 1.44}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 2.605, y: -0.29}
-      - {x: 2.495, y: -0.13}
-      - {x: 2.315, y: -0.049999997}
-      - {x: 2.175, y: -0.03}
-      - {x: 2.075, y: -0.02}
-      - {x: 1.925, y: -0.02}
-      - {x: 1.8149999, y: 0.03}
-      - {x: 1.8149999, y: 0.17}
-      - {x: 1.675, y: 0.42999998}
-      - {x: 1.505, y: 0.59}
-      - {x: 1.265, y: 0.71999997}
-      - {x: 0.85499996, y: 0.71999997}
-      - {x: 0.615, y: 0.64}
-      - {x: 0.385, y: 0.48999998}
-      - {x: 0.205, y: 0.32}
-      - {x: 0.085, y: 0.44}
-      - {x: -0.015, y: 0.51}
-      - {x: -0.155, y: 0.58}
-      - {x: -0.355, y: 0.63}
-      - {x: -0.705, y: 0.63}
-      - {x: -0.805, y: 0.61}
-      - {x: -1.095, y: 0.48}
-      - {x: -1.225, y: 0.32999998}
-      - {x: -1.295, y: 0.14999999}
-      - {x: -1.295, y: 0.02}
-      - {x: -1.635, y: 0.02}
-      - {x: -1.905, y: 0}
-      - {x: -2.165, y: -0.07}
-      - {x: -2.2649999, y: -0.11}
-      - {x: -2.355, y: -0.14999999}
-      - {x: -2.485, y: -0.21}
-      - {x: -2.605, y: -0.35999998}
-      - {x: -2.605, y: -0.59999996}
-      - {x: -2.5449998, y: -0.69}
-      - {x: -1.305, y: -0.71999997}
-      - {x: 1.005, y: -0.71999997}
-      - {x: 1.8149999, y: -0.69}
-      - {x: 2.5149999, y: -0.68}
-      - {x: 2.605, y: -0.56}
 --- !u!114 &8361260137878817624
 MonoBehaviour:
   m_ObjectHideFlags: 0
