@@ -39,7 +39,7 @@ public class control_Arco : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.name == "Arco_Pivote1") {
+        if (gameObject.name == "Arco_Pivote2") {
             Vector2 arco_Posicion = transform.position;
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Direccion = mousePosition - arco_Posicion;
@@ -49,7 +49,7 @@ public class control_Arco : MonoBehaviour
             StartCoroutine(esperaFlecha());
         }
 
-        if (gameObject.name == "Arco_Pivote2") {
+        if (gameObject.name == "Arco_Pivote1") {
             Vector2 arco_Posicion = transform.position;
             Vector2 mousePosition = punteroArco.position;
             Direccion = mousePosition - arco_Posicion;

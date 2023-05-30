@@ -1367,7 +1367,7 @@ GameObject:
   - component: {fileID: 396714522}
   - component: {fileID: 396714523}
   m_Layer: 0
-  m_Name: Arco_Pivote2
+  m_Name: Arco_Pivote1
   m_TagString: Untagged
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4223,6 +4223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67520f46fe379ce48a7a1c3f87c6a2f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  velocidad: 10
 --- !u!212 &1732275915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4285,7 +4286,7 @@ GameObject:
   - component: {fileID: 1784508442}
   - component: {fileID: 1784508443}
   m_Layer: 0
-  m_Name: Arco_Pivote1
+  m_Name: Arco_Pivote2
   m_TagString: Untagged
   m_Icon: {fileID: 7422848464349959988, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
