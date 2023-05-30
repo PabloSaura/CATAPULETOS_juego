@@ -27,4 +27,9 @@ public class StartScript : MonoBehaviour
     public void Tutorial(){
     SceneManager.LoadScene("Tutorial");
     }
-}
+    
+    public void Volver(){
+    SceneManager.LoadScene("Start");
+    }
+    }
+
