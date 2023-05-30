@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1090529805052588214}
   - component: {fileID: 4448279032678221902}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 6462154613888362154}
   - component: {fileID: -7796657228297692316}
   - component: {fileID: 950841190623725077}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Poyectil_Ballista
   m_TagString: Untagged
   m_Icon: {fileID: 0}

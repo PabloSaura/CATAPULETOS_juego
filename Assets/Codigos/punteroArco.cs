@@ -15,21 +15,21 @@ public class punteroArco : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float hoz = Input.GetAxis("Horizontal")*-velocidad;
+        float hoz = Input.GetAxis("Horizontal")*velocidad;
         float ver = Input.GetAxis("Vertical")*velocidad;
 
-        if(transform.position.x > 10){
-            transform.position = new Vector2(10, transform.position.y);
+        if(transform.position.x > 15){
+            transform.position = new Vector2(15, transform.position.y);
         }
-        if(transform.position.x < -10){
-            transform.position = new Vector2(-10, transform.position.y);
+        if(transform.position.x < -15){
+            transform.position = new Vector2(-15, transform.position.y);
         }
 
-        if(transform.position.y > 5){
-            transform.position = new Vector2(transform.position.x, 5);
+        if(transform.position.y > 9){
+            transform.position = new Vector2(transform.position.x, 9);
         }
-        if(transform.position.y < -5){
-            transform.position = new Vector2(transform.position.x,-5);
+        if(transform.position.y < -7){
+            transform.position = new Vector2(transform.position.x,-7);
         }
 
 

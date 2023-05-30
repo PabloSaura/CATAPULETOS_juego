@@ -46,7 +46,7 @@ public class Arma_Arco : MonoBehaviour
         }
         */
 
-        if (Input.GetMouseButtonDown(0) && puedoLanzar == true)
+        if (Input.GetMouseButtonDown(0) && puedoLanzar == true /*&& gameObject.name == "Arco_Pivote2"*/)
         {
             Disparo();
 
@@ -56,8 +56,8 @@ public class Arma_Arco : MonoBehaviour
             StartCoroutine(esperaFlecha());
         }
 
-        /* //Bando Derecha
-        if (Input.GetMouseButtonDown(0) && puedoLanzar == true)
+         //Bando Derecha
+        if (Input.GetKeyDown(KeyCode.LeftShift) && puedoLanzar == true /*&& gameObject.name == "Arco_Pivote1"*/)
         {
             Disparo();
 
@@ -66,7 +66,7 @@ public class Arma_Arco : MonoBehaviour
             puedoLanzar = false;
             StartCoroutine(esperaFlecha());
         }
-        */
+        
     }
 
     //Averiguar botones de Mando

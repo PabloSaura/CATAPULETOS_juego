@@ -34,7 +34,7 @@ public class Catapulta_prueba : MonoBehaviour
     private void Update()
     {
         
-        if (Input.GetKeyDown(KeyCode.RightShift) && puedoLanzar == true && gameObject.name == "puntoDisparo2")
+        if (Input.GetKeyDown(KeyCode.Space) && puedoLanzar == true && gameObject.name == "puntoDisparo2")
         {
                     Debug.Log("lanzar");
             puedoLanzar = false;
@@ -46,7 +46,7 @@ public class Catapulta_prueba : MonoBehaviour
         }
 
          //CONTROL para Bando_Derecha
-        if (Input.GetKeyDown(KeyCode.LeftShift) && puedoLanzar == true && gameObject.name == "puntoDisparo1")
+        if (Input.GetKeyDown(KeyCode.RightShift) && puedoLanzar == true && gameObject.name == "puntoDisparo1")
         {
                     Debug.Log("lanzar");
             puedoLanzar = false;

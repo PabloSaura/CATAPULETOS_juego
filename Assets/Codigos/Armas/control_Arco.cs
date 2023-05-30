@@ -16,7 +16,7 @@ public class control_Arco : MonoBehaviour
 
     public Transform punteroArco;
 
-    bool lanzaFlecha = false;
+    //bool lanzaFlecha = false;
     bool puedoLanzar = true;
 
 
@@ -51,7 +51,8 @@ public class control_Arco : MonoBehaviour
 
         if (gameObject.name == "Arco_Pivote1") {
             Vector2 arco_Posicion = transform.position;
-            Vector2 mousePosition = punteroArco.position;
+            Vector2 mousePosition = -punteroArco.position;
+            //Vector2 mousePosition = punteroArco.position.x , punteroArco.position.y;
             Direccion = mousePosition - arco_Posicion;
             transform.right = Direccion;
 

@@ -34,7 +34,7 @@ public class Arma_Ballista : MonoBehaviour
         }
 
         //CONTROL para Bando_Derecha
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !disparando  && gameObject.name == "puntoDisparo1")
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !disparando  && gameObject.name == "puntoDisparo1")
         {
             DispararVirote();
             Destroy(virotePrefab);
