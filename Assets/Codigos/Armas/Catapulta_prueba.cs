@@ -84,8 +84,6 @@ public class Catapulta_prueba : MonoBehaviour
             Destroy(this.gameObject);
         }
     */
-
->>>>>>> cfbf2b6be1bb954b5ae94bd60c451ee5030e0d26
         bolaLanzada = Instantiate(bolaPrefab, transform.position, Quaternion.identity);
         Rigidbody2D rb = bolaLanzada.GetComponent<Rigidbody2D>();
 
@@ -102,7 +100,3 @@ public class Catapulta_prueba : MonoBehaviour
         Debug.Log("puedo lanzar Bola");
     }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> cfbf2b6be1bb954b5ae94bd60c451ee5030e0d26
