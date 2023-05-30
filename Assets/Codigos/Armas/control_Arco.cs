@@ -14,6 +14,11 @@ public class control_Arco : MonoBehaviour
 
     Vector2 Direccion;
 
+
+    bool lanzaFlecha = false;
+    bool puedoLanzar = true;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +43,12 @@ public class control_Arco : MonoBehaviour
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Direccion = mousePosition - arco_Posicion;
         transform.right = Direccion;
+
+        puedoLanzar = false;
+        StartCoroutine(esperaFlecha());
         }
+
+        
 
         /* //CONTROL para Bando_Derecha
         if (gameObject.name == "Arco_Pivote2") {
@@ -49,6 +59,13 @@ public class control_Arco : MonoBehaviour
         }
         */
 
+    }
+
+     IEnumerator esperaFlecha()
+    {
+        yield return new WaitForSeconds(3f);
+        puedoLanzar = true;
+        Debug.Log("puedo lanzar Flecha");
     }
 
     Vector2 PointPosition(float t)
