@@ -20,7 +20,21 @@ public class MainScript : MonoBehaviour
     //Vida Capsules
     public static int Max_Vida_Capsules = 10; // lo he cambiado de 5 --> 3
 
-    public int Vida_Capsule_Izquierda;
+    [SerializeField]
+    private int _Vida_Capsule_Izquierda;
+    public int Vida_Capsule_Izquierda
+    {
+        get => _Vida_Capsule_Izquierda;
+        set
+        {
+            value = Mathf.Max(0, value);
+            _Vida_Capsule_Izquierda = value;
+            if (_Vida_Capsule_Izquierda <= 0)
+            {
+                IniciaPosiciones();
+            }
+        }
+    }
     private int _Puntos_Izquierda;
     public int Puntos_Izquierda
     {
@@ -31,7 +45,21 @@ public class MainScript : MonoBehaviour
             TextoPuntuacionIzquierda.text = value.ToString();
         }
     }
-    public int Vida_Capsule_Derecha;
+    [SerializeField]
+    private int _Vida_Capsule_Derecha;
+    public int Vida_Capsule_Derecha
+    {
+        get => _Vida_Capsule_Derecha;
+        set
+        {
+            value = Mathf.Max(0, value);
+            _Vida_Capsule_Derecha = value;
+            if (_Vida_Capsule_Derecha <= 0)
+            {
+                IniciaPosiciones();
+            }
+        }
+    }
     private int _Puntos_Derecha;
     public int Puntos_Derecha
     {
@@ -72,6 +100,9 @@ public class MainScript : MonoBehaviour
     {
         cap1.transform.position = new Vector2(-10.5f, -5.9f);
         cap2.transform.position = new Vector2(10.5f, -5.9f);
+        cap1.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        cap2.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        Vida_Capsule_Derecha = Vida_Capsule_Izquierda = 10;
         Besito = false;
     }
 
