@@ -31,7 +31,7 @@ public class MainScript : MonoBehaviour
             _Vida_Capsule_Izquierda = value;
             if (_Vida_Capsule_Izquierda <= 0)
             {
-                IniciaPosiciones();
+                IniciaPosicionIzquierda();
             }
         }
     }
@@ -56,7 +56,7 @@ public class MainScript : MonoBehaviour
             _Vida_Capsule_Derecha = value;
             if (_Vida_Capsule_Derecha <= 0)
             {
-                IniciaPosiciones();
+                IniciaPosicionDerecha();
             }
         }
     }
@@ -98,12 +98,23 @@ public class MainScript : MonoBehaviour
 
     public void IniciaPosiciones()
     {
-        cap1.transform.position = new Vector2(-10.5f, -5.9f);
-        cap2.transform.position = new Vector2(10.5f, -5.9f);
-        cap1.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-        cap2.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-        Vida_Capsule_Derecha = Vida_Capsule_Izquierda = 10;
+        IniciaPosicionDerecha();
+        IniciaPosicionIzquierda();
         Besito = false;
+    }
+
+    public void IniciaPosicionIzquierda()
+    {
+        cap1.transform.position = new Vector2(-10.5f, -5.9f);
+        cap1.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        Vida_Capsule_Izquierda = 10;
+    }
+
+    public void IniciaPosicionDerecha()
+    {
+        cap2.transform.position = new Vector2(10.5f, -5.9f);
+        cap2.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        Vida_Capsule_Derecha = 10;
     }
 
     //void OnGUI(){
