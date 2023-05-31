@@ -46,9 +46,9 @@ public class Arma_Arco : MonoBehaviour
         }
         */
 
-        if (Input.GetMouseButtonDown(0) && puedoLanzar == true /*&& gameObject.name == "Arco_Pivote2"*/)
+        if (Input.GetMouseButtonDown(0) && puedoLanzar == true && gameObject.name == "Arco_Pivote2")
         {
-            Disparo();
+            Disparo(false);
 
             mainAudio.disparaFlecha (); //Sonido
 
@@ -57,9 +57,9 @@ public class Arma_Arco : MonoBehaviour
         }
 
          //Bando Derecha
-        if (Input.GetKeyDown(KeyCode.LeftShift) && puedoLanzar == true /*&& gameObject.name == "Arco_Pivote1"*/)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && puedoLanzar == true && gameObject.name == "Arco_Pivote1")
         {
-            Disparo();
+            Disparo(true);
 
             mainAudio.disparaFlecha (); //Sonido
 
@@ -83,15 +83,30 @@ public class Arma_Arco : MonoBehaviour
         Debug.Log("puedo lanzar Flecha");
     }
 
-    void Disparo()
+    void Disparo(bool derecha)
     {
+
         GameObject nuevaFlecha = Instantiate(flecha, puntoDisparo.position, puntoDisparo.rotation);
         Flecha codigoFlecha = nuevaFlecha.GetComponent<Flecha>();
-        codigoFlecha.EsDeIzquierda = EsDeIzquierda;
+        
 
         Vector3 targetForward = puntoDisparo.rotation * Vector3.forward;
         Vector3 targetUp = puntoDisparo.rotation * Vector3.right;
-        nuevaFlecha.GetComponent<Rigidbody2D>().velocity = targetUp * velocidadFlecha;
+
+        if(derecha == false) nuevaFlecha.transform.localScale  = new Vector3(
+            nuevaFlecha.transform.localScale.x * -1,
+            nuevaFlecha.transform.localScale.y,
+            nuevaFlecha.transform.localScale.z
+        );
+
+        if(derecha){
+            codigoFlecha.EsDeIzquierda = false;
+            nuevaFlecha.GetComponent<Rigidbody2D>().velocity = targetUp * velocidadFlecha *-1;
+        }else{
+            codigoFlecha.EsDeIzquierda = true;
+            nuevaFlecha.GetComponent<Rigidbody2D>().velocity = targetUp * velocidadFlecha;
+        }
+        
     }
 
     /*   void FixedUpdate()

@@ -148,8 +148,12 @@ MonoBehaviour:
   sonidoImpacto_Flecha: {fileID: 8300000, guid: cc020fafd747576439c21733022976d2, type: 3}
   sonidoDisparo_Catapulta: {fileID: 8300000, guid: 51b05ccb5080dab488507556860f29f4, type: 3}
   sonidoImpacto_Catapulta: {fileID: 8300000, guid: 25f6c5aba90afff44b985a7e72620a04, type: 3}
+  sonidoDisparo_Ballista: {fileID: 8300000, guid: cb7eb2281de20254a976dad2ec13ec46, type: 3}
+  sonidoImpacto_Ballista: {fileID: 8300000, guid: bca07b924cd439a48b7459f74277ac86, type: 3}
   sonidoBeso: {fileID: 8300000, guid: f4ef2cfde1a4c6448a1f8d4c4dbff24b, type: 3}
   sfxGritoH: {fileID: 8300000, guid: 219931d0507d00a4980f0a55d5fb72e9, type: 3}
   sfxGritoM: {fileID: 8300000, guid: ec31242d382483c4fbd3a2a721b3a27e, type: 3}
   sfxGritoH2: {fileID: 8300000, guid: f5584ef60a8eb4742996913c8d9c559c, type: 3}
   sfxGritoM2: {fileID: 8300000, guid: 192eaf1f010f6de469236756f59dd944, type: 3}
+  sfxGritoH3: {fileID: 8300000, guid: ec2eac7fc3e1f96458a5fa4f477871c5, type: 3}
+  sfxGritoM3: {fileID: 8300000, guid: a6cb8440f833aec468fcb72ae1403cca, type: 3}

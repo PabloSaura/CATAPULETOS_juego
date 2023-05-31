@@ -53,7 +53,7 @@ public class control_Arco : MonoBehaviour
             Vector2 arco_Posicion = transform.position;
             Vector2 mousePosition = -punteroArco.position;
             //Vector2 mousePosition = punteroArco.position.x , punteroArco.position.y;
-            Direccion = mousePosition - arco_Posicion;
+            Direccion = mousePosition + arco_Posicion;
             transform.right = Direccion;
 
             Debug.Log ("Arco_Pivote2");

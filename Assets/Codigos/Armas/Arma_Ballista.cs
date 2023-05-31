@@ -16,28 +16,51 @@ public class Arma_Ballista : MonoBehaviour
     private bool disparando = false;
     public float distanciaDestruccion = 27f; ///para que se destruyaaa
 
+
+    GameObject AudioManager;
+
+    audioManager mainAudio;
+
+    bool lanzaBallista = false;
+    bool puedoLanzar = true;
+
+
     private void Start()
     {
         objetivo = puntoA;
+
+        AudioManager = GameObject.Find("AudioManager");
+        mainAudio = AudioManager.GetComponent<audioManager>();
     }
 
     private void Update()
     {
         RotarBallesta();
 
-        if (Input.GetKeyDown(KeyCode.Return) && !disparando && gameObject.name == "puntoDisparo2")
+        if (Input.GetKeyDown(KeyCode.Return) && !disparando && puedoLanzar == true && gameObject.name == "puntoDisparo2")
         {
             DispararVirote();
-            Destroy(virotePrefab);
+            //Destroy(virotePrefab);
+            
+            mainAudio.disparaBallista (); //Sonido
 
+            puedoLanzar = false;
+            StartCoroutine(esperaBallista());
             //corutine de 1.5f segundos
         }
 
         //CONTROL para Bando_Derecha
-        if (Input.GetKeyDown(KeyCode.LeftControl) && !disparando  && gameObject.name == "puntoDisparo1")
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !disparando && puedoLanzar == true && gameObject.name == "puntoDisparo1")
         {
             DispararVirote();
-            Destroy(virotePrefab);
+            //Destroy(virotePrefab);
+
+            
+            mainAudio.disparaBallista (); //Sonido
+
+            puedoLanzar = false;
+            StartCoroutine(esperaBallista());
+            //corutine de 1.5f segundos
         }
         
     }
@@ -58,6 +81,7 @@ public class Arma_Ballista : MonoBehaviour
 
         GameObject virote = Instantiate(virotePrefab, transform.position, transform.rotation);
         Rigidbody2D rb = virote.GetComponent<Rigidbody2D>();
+        virote.GetComponent<proyectilBallista>().quienSoy = gameObject.name;
 
         Vector2 direccionDisparo = transform.right;
         rb.AddForce(direccionDisparo * fuerzaDisparo, ForceMode2D.Impulse);
@@ -65,12 +89,19 @@ public class Arma_Ballista : MonoBehaviour
         disparando = false;
     }
 
-    /**/
+     IEnumerator esperaBallista()
+    {
+        yield return new WaitForSeconds(1.5f);
+        puedoLanzar = true;
+        Debug.Log("puedo lanzar Ballista");
+    }
+
+    /*
     void OnGUI () {
         Event eventoTecla = Event.current;
         Debug.Log ("La tecla presionada:" + eventoTecla.keyCode);
     }
-    
+    */
 }
 
 

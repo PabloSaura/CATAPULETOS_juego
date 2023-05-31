@@ -1366,6 +1366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 396714522}
   - component: {fileID: 396714523}
+  - component: {fileID: 396714524}
   m_Layer: 0
   m_Name: Arco_Pivote1
   m_TagString: Untagged
@@ -1405,6 +1406,23 @@ MonoBehaviour:
   numeroDePuntos: 50
   espacioEntrePuntos: 0.025
   punteroArco: {fileID: 1732275913}
+--- !u!114 &396714524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396714521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df6a7d963977d048a4bb8c2f1a6c715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EsDeIzquierda: 0
+  Arco2: {fileID: 396714521}
+  flecha: {fileID: 5612095406143828059, guid: 9c79f5bbcd5fc514987ece3177deff0c, type: 3}
+  velocidadFlecha: 13
+  puntoDisparo: {fileID: 355374238}
 --- !u!1001 &503144958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1728,7 +1746,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594110610}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cee7ab4d520183a4fa6eb41ec79510dd, type: 3}
   m_Name: 
@@ -1743,7 +1761,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594110610}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9df6a7d963977d048a4bb8c2f1a6c715, type: 3}
   m_Name: 
@@ -4205,7 +4223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1732275912}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 9, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 721519649}
@@ -4285,6 +4303,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1784508442}
   - component: {fileID: 1784508443}
+  - component: {fileID: 1784508444}
   m_Layer: 0
   m_Name: Arco_Pivote2
   m_TagString: Untagged
@@ -4324,6 +4343,23 @@ MonoBehaviour:
   numeroDePuntos: 50
   espacioEntrePuntos: 0.025
   punteroArco: {fileID: 851311664}
+--- !u!114 &1784508444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784508441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df6a7d963977d048a4bb8c2f1a6c715, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EsDeIzquierda: 1
+  Arco2: {fileID: 1784508441}
+  flecha: {fileID: 5612095406143828059, guid: 9c79f5bbcd5fc514987ece3177deff0c, type: 3}
+  velocidadFlecha: 13
+  puntoDisparo: {fileID: 851311664}
 --- !u!1 &1828718831
 GameObject:
   m_ObjectHideFlags: 0
@@ -4333,6 +4369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1828718832}
+  - component: {fileID: 1828718833}
   m_Layer: 3
   m_Name: puntoDisparo1
   m_TagString: Untagged
@@ -4354,6 +4391,24 @@ Transform:
   m_Father: {fileID: 154584409}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1828718833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828718831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e865f10edf3e5842bb1d3ec6c6a7256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bolaPrefab: {fileID: 7860513153332582206, guid: b655013ba6b84264cb242c7258665ee9, type: 3}
+  fuerzaLanzamiento: 10
+  variacionX: 27
+  distanciaDestruccion: 27
+  CapsuleIzquierda: {fileID: 269087691}
+  CapsuleDerecha: {fileID: 1465094129}
 --- !u!1 &1887849718
 GameObject:
   m_ObjectHideFlags: 0

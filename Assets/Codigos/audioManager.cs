@@ -18,6 +18,9 @@ public class audioManager : MonoBehaviour
 
     public AudioClip sonidoDisparo_Catapulta;
     public AudioClip sonidoImpacto_Catapulta;
+
+    public AudioClip sonidoDisparo_Ballista;
+    public AudioClip sonidoImpacto_Ballista;
     
     public AudioClip sonidoBeso;
 
@@ -26,6 +29,9 @@ public class audioManager : MonoBehaviour
 
     public AudioClip sfxGritoH2;
     public AudioClip sfxGritoM2;
+
+    public AudioClip sfxGritoH3;
+    public AudioClip sfxGritoM3;
 
 
     private AudioSource hiloMusical;
@@ -125,6 +131,23 @@ public class audioManager : MonoBehaviour
 
     public void besitoTrue (){
         hiloMusical.PlayOneShot(sonidoBeso, 1f);
+    }
+
+
+    public void disparaBallista (){
+        hiloMusical.PlayOneShot(sonidoDisparo_Ballista, 1f);
+    }
+
+    public void impactaBallista (){
+     hiloMusical.PlayOneShot(sonidoImpacto_Ballista, 1f);
+    }
+
+    public void GritaH3 (){
+        hiloMusical.PlayOneShot(sfxGritoH3, 1f);
+    }
+
+    public void GritaM3 (){
+        hiloMusical.PlayOneShot(sfxGritoM3, 1f);
     }
 
 }

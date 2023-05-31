@@ -68,7 +68,7 @@ GameObject:
   - component: {fileID: 4715381002815404135}
   - component: {fileID: 6462154613888362154}
   - component: {fileID: -7796657228297692316}
-  - component: {fileID: 950841190623725077}
+  - component: {fileID: 3095293654435746912}
   m_Layer: 6
   m_Name: Poyectil_Ballista
   m_TagString: Untagged
@@ -130,7 +130,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 99a0b4ace4d3d0141b73949db524477b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -163,25 +163,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!68 &950841190623725077
-EdgeCollider2D:
+--- !u!114 &3095293654435746912
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4406459295847282566}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -1.0182676, y: 0.13865265}
-  - {x: 1.3213196, y: -0.21586502}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c92087a03e75184fbde63d8dd3b86f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EsDeIzquierda: 0
