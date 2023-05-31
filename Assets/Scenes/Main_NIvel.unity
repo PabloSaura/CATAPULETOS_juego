@@ -4173,6 +4173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e865f10edf3e5842bb1d3ec6c6a7256, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EsDeIzquierda: 1
   bolaPrefab: {fileID: 7860513153332582206, guid: b655013ba6b84264cb242c7258665ee9, type: 3}
   fuerzaLanzamiento: 60
   variacionX: 20
