@@ -5,5 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "PersonajesSeleccionados", menuName = "CATAPULETOS_juego/PersonajesSeleccionados", order = 0)]
 public class PersonajesSeleccionados : ScriptableObject
 {
-    public GameObject PersonajeIzquierda, PersonajeDerecha;
+    public int IndicePersonajeIzquierda = 0, IndicePersonajeDerecha = 5;
+    public GameObject[] personajes;
+    public GameObject PersonajeIzquierda { get => personajes[IndicePersonajeIzquierda]; }
+    public GameObject PersonajeDerecha { get => personajes[IndicePersonajeDerecha]; }
+
 }

@@ -917,19 +917,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personajesSeleccionados: {fileID: 11400000, guid: 181d7722d1e55b640b78ab652b5b1d96, type: 2}
-  personajesDisponibles:
-  - personaje: {fileID: 1197317857337893965, guid: 957d0794e0af45044a7f3c4047703255, type: 3}
-    sprite: {fileID: 21300000, guid: 4d824072c090ad0488c8f99efe4afdc4, type: 3}
-  - personaje: {fileID: 9009627834158704569, guid: c04adc24dc7004047a14253d070bf88b, type: 3}
-    sprite: {fileID: 21300000, guid: 92f7e83781629b74a87f21c2e4a54a44, type: 3}
-  - personaje: {fileID: 1678542604619855420, guid: cec54080ceb3dec42907e3e6dfd7aecc, type: 3}
-    sprite: {fileID: 21300000, guid: f242d3b072414d14785549fbf227e562, type: 3}
-  - personaje: {fileID: 684384113644965385, guid: d1d85f9ba7ab9be46a5821f02cf3706f, type: 3}
-    sprite: {fileID: 21300000, guid: 4f358da2f406402489ac5b1035b0ae90, type: 3}
-  - personaje: {fileID: 6306105090145416579, guid: 6be2813b3f25f8846a3269cc94bd2bb6, type: 3}
-    sprite: {fileID: 21300000, guid: 6afcbd5713d7cbd409cd34b522cf5522, type: 3}
-  - personaje: {fileID: 307800543200492328, guid: 66a699409f543bf478f68cf3381c1302, type: 3}
-    sprite: {fileID: 21300000, guid: 5f69254faf136c642a6a7bfda4c739af, type: 3}
+  spritesDisponibles:
+  - {fileID: 21300000, guid: 4d824072c090ad0488c8f99efe4afdc4, type: 3}
+  - {fileID: 21300000, guid: 92f7e83781629b74a87f21c2e4a54a44, type: 3}
+  - {fileID: 21300000, guid: f242d3b072414d14785549fbf227e562, type: 3}
+  - {fileID: 21300000, guid: 4f358da2f406402489ac5b1035b0ae90, type: 3}
+  - {fileID: 21300000, guid: 6afcbd5713d7cbd409cd34b522cf5522, type: 3}
+  - {fileID: 21300000, guid: f242d3b072414d14785549fbf227e562, type: 3}
   indiceSeleccionadoIzquierda: 0
   indiceSeleccionadoDerecha: 0
   retratoIzquierda: {fileID: 103964120}

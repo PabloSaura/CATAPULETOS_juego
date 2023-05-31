@@ -12,5 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b663f450a067d488d5a97c83d6ce26, type: 3}
   m_Name: PersonajesSeleccionados
   m_EditorClassIdentifier: 
-  PersonajeIzquierda: {fileID: 1197317857337893965, guid: 957d0794e0af45044a7f3c4047703255, type: 3}
-  PersonajeDerecha: {fileID: 1678542604619855420, guid: cec54080ceb3dec42907e3e6dfd7aecc, type: 3}
+  IndicePersonajeIzquierda: 0
+  IndicePersonajeDerecha: 5
+  personajes:
+  - {fileID: 1197317857337893965, guid: 957d0794e0af45044a7f3c4047703255, type: 3}
+  - {fileID: 9009627834158704569, guid: c04adc24dc7004047a14253d070bf88b, type: 3}
+  - {fileID: 1678542604619855420, guid: cec54080ceb3dec42907e3e6dfd7aecc, type: 3}
+  - {fileID: 684384113644965385, guid: d1d85f9ba7ab9be46a5821f02cf3706f, type: 3}
+  - {fileID: 6306105090145416579, guid: 6be2813b3f25f8846a3269cc94bd2bb6, type: 3}
+  - {fileID: 307800543200492328, guid: 66a699409f543bf478f68cf3381c1302, type: 3}
