@@ -51,7 +51,22 @@ public class Rondas : MonoBehaviour
         {
             Debug.Log("Fin de Partida");
             MainScript.Ronda = 3;
-            SceneManager.LoadScene("Start");
+            MainScript mainScript = FindObjectOfType<MainScript>();
+            if (mainScript.Puntos_Derecha > mainScript.Puntos_Izquierda)
+            {
+                SceneManager.LoadScene("DerechaGana");
+                return;
+            }
+            else if (mainScript.Puntos_Derecha < mainScript.Puntos_Izquierda)
+            {
+                SceneManager.LoadScene("IzquierdaGana");
+                return;
+            }
+            else
+            {
+                SceneManager.LoadScene("Empate");
+                return;
+            }
         }
 
     }
