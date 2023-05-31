@@ -9,6 +9,8 @@ public class Catapulta_prueba : MonoBehaviour
     audioManager mainAudio;
 
 
+    public bool EsDeIzquierda = true;
+    public bool EsDeDerecha => !EsDeIzquierda;
     public GameObject bolaPrefab;
     public float fuerzaLanzamiento = 10f;
 
@@ -37,7 +39,7 @@ Vector2 fuerza;
         
         if (Input.GetKeyDown(KeyCode.RightShift) && puedoLanzar == true && gameObject.name == "puntoDisparo2")
         {
-                    Debug.Log("lanzar");
+            Debug.Log("lanzar");
             puedoLanzar = false;
             LanzarBola(false);
 
@@ -49,15 +51,15 @@ Vector2 fuerza;
          //CONTROL para Bando_Derecha
         if (Input.GetKeyDown(KeyCode.Space) && puedoLanzar == true && gameObject.name == "puntoDisparo1")
         {
-                    Debug.Log("lanzar");
+            Debug.Log("lanzar");
             puedoLanzar = false;
             LanzarBola(true);
 
-            mainAudio.disparaCatapulta (); //Sonido
+            mainAudio.disparaCatapulta(); //Sonido
 
             StartCoroutine(esperaBola());
         }
-        
+
 
         if (bolaLanzada != null && Vector2.Distance(transform.position, bolaLanzada.transform.position) >= distanciaDestruccion) // NULL: para indicar un valor no definido o desconocido (volver a ver el tuto)
         {
@@ -71,21 +73,22 @@ Vector2 fuerza;
         if (bolaLanzada)
         {
             lanzaBola = true;
-            Debug.Log (lanzaBola);
+            Debug.Log(lanzaBola);
         }
-    /*    
-        void OnCollisionEnter(Collision collision) ///ESTO ES PARA DESTRUIR LA BOLA AL TOCAR A LOS PERSONAJES
-    {
-        if (collision.gameObject.name == "CapsuleDerecha")
+        /*    
+            void OnCollisionEnter(Collision collision) ///ESTO ES PARA DESTRUIR LA BOLA AL TOCAR A LOS PERSONAJES
         {
-            Destroy(this.gameObject);
-        }
-        if (collision.gameObject.name == "CapsuleIzquierda")
-        {
-            Destroy(this.gameObject);
-        }
-    */
+            if (collision.gameObject.name == "CapsuleDerecha")
+            {
+                Destroy(this.gameObject);
+            }
+            if (collision.gameObject.name == "CapsuleIzquierda")
+            {
+                Destroy(this.gameObject);
+            }
+        */
         bolaLanzada = Instantiate(bolaPrefab, transform.position, Quaternion.identity);
+        bolaLanzada.GetComponent<Proyectil_Catapulta>().EsDeIzquierda = EsDeIzquierda;
         Rigidbody2D rb = bolaLanzada.GetComponent<Rigidbody2D>();
 
         

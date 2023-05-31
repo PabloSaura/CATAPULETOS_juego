@@ -47,11 +47,26 @@ public class Rondas : MonoBehaviour
         */
 
         // AQUÍ VA TODO LO QUE SE QUIERA HACER AL PERDERSE LAS 3 RONDAS
-        if (MainScript.Ronda == 0)
+        if (MainScript.Ronda <= 0)
         {
             Debug.Log("Fin de Partida");
             MainScript.Ronda = 3;
-            SceneManager.LoadScene("Start");
+            MainScript mainScript = FindObjectOfType<MainScript>();
+            if (mainScript.Puntos_Derecha > mainScript.Puntos_Izquierda)
+            {
+                SceneManager.LoadScene("DerechaGana");
+                return;
+            }
+            else if (mainScript.Puntos_Derecha < mainScript.Puntos_Izquierda)
+            {
+                SceneManager.LoadScene("IzquierdaGana");
+                return;
+            }
+            else
+            {
+                SceneManager.LoadScene("Empate");
+                return;
+            }
         }
 
     }

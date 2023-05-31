@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: dc4d95a9ec61f57429cc1c1abb441c3c
+  - enabled: 1
+    path: Assets/Scenes/DerechaGana.unity
+    guid: 38336f2113b08544f8a440ffbe1241a6
+  - enabled: 1
+    path: Assets/Scenes/Empate.unity
+    guid: ed7d3c7329abd2d408878f1444994750
+  - enabled: 1
+    path: Assets/Scenes/IzquierdaGana.unity
+    guid: 6d3973f8901eb28499cb9ddc492ce4ce
   m_configObjects: {}
