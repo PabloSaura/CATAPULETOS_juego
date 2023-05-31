@@ -923,7 +923,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f242d3b072414d14785549fbf227e562, type: 3}
   - {fileID: 21300000, guid: 4f358da2f406402489ac5b1035b0ae90, type: 3}
   - {fileID: 21300000, guid: 6afcbd5713d7cbd409cd34b522cf5522, type: 3}
-  - {fileID: 21300000, guid: f242d3b072414d14785549fbf227e562, type: 3}
+  - {fileID: 21300000, guid: 5f69254faf136c642a6a7bfda4c739af, type: 3}
   indiceSeleccionadoIzquierda: 0
   indiceSeleccionadoDerecha: 0
   retratoIzquierda: {fileID: 103964120}
